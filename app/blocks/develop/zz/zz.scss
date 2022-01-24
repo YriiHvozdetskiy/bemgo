@@ -1,13 +1,38 @@
 @import '../app/variable.scss';
-.test{
-	&__title{
+.test {
+	&__title {
 		color: red;
 	}
 }
-.hero{
-	&__title{
+.hero {
+	&__title {
 		font-size: 5rem;
 		color: $hover-contact-info;
 		font-family: $family_Raleway;
+	}
+	&__img {
+		width: 15rem;
+		height: 15rem;
+		background: url("img/sprite/item_2.jpg") no-repeat center;
+		background-size: cover; //розтягує картинку
+	}
+	&__picture {
+		// тег picture -- не стилізується
+		& > * {
+			max-width: 130rem;
+			width: 100%;
+			height: 30rem;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+	&__icon{
+		cursor: pointer;
+		fill: #27AE60;
+		transition: fill .25s $time-distribution-function;
+		&:hover,
+		&:focus{
+		    fill: #007aff;
+		}
 	}
 }
