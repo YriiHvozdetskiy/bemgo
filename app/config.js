@@ -17,21 +17,23 @@ module.exports = {
 	},
 
 	build: {
-		imagemin: [ 'png', 'jpg','svg' ],
-		sourcemaps: [ 'js', 'scss' ],
+		// imagemin: [ 'png', 'jpg', 'svg' ],
+		sourcemaps: [ 'js', 'css' ],
 		autoprefixer: [ 'last 3 versions', 'ie 10', 'ie 11' ],
-		// Путь от корня сборки до файла с переменными
-		globalStyles: ['app/blocks/develop/app/styles/variables.scss', 'app/blocks/develop/app/styles/common.scss', 'app/blocks/develop/app/styles/normalize.scss', 'app/blocks/develop/app/styles/mixin.scss', 'app/blocks/develop/app/styles/placeholders.scss'],
+		bundles: [ 'css','js' ],
 	},
 
 	autoCreate: {
-		onlyOnWatch: false,
+		onlyOnWatch: true,
+		// files: [ '.css' ],
+		// levels: [ 'develop' ],
+		// ignoreNodes: [ 'symbol', /_no_js/i ],
 	},
 
 	dist: {
 		styles: 'styles',
-		fonts: 'static/fonts',
-		img: 'static/img',
+		fonts: 'styles/fonts',
+		img: 'styles/img',
 		symbol: 'styles/img',
 		scripts: 'scripts',
 		static: 'static',

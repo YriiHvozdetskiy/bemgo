@@ -62,7 +62,7 @@ module.exports = {
 			const isSprite = file.path.indexOf( path.join( 'img', 'sprite' ) ) !== -1
 			const relative = file.path.indexOf( this.paths._blocks ) !== -1 ? this.paths._blocks : this.paths._root
 			const block = path.relative( relative, file.path ).split( path.sep )[1]
-			const name = ( isSprite ? 'sprite_' : '' ) + basename;
+			const name = ( isSprite ? 'sprite_' : '' ) + `${block}_${basename}`
 
 			file.path = path.join( file.base, name )
 

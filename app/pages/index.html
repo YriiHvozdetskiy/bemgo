@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="utf-8"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-	<meta name="HandheldFriendly" content="true"/>
-	<meta name="MobileOptimized" content="width"/>
-	<meta
-		name="viewport"
-		content="width=device-width, initial-scale=1, shrink-to-fit=no"
-	/>
-	<meta name="format-detection" content="telephone=no"/>
-	<meta name="format-detection" content="address=no"/>
-	<title>Hello</title>
-	<meta name="description" content="Simple demo app."/>
-	<!--		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />-->
-	<!--		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />-->
-	<!--		<link-->
-	<!--			rel="stylesheet"-->
-	<!--			href="https://unpkg.com/swiper/swiper-bundle.min.css"-->
-	<!--		/>-->
-	<!-- BEMGO:styles -->
-	<!-- BEMGO:favicons -->
-</head>
-<body>
-<div class="app app_no_js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="MobileOptimized" content="width">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="address=no">
+		<title>Hello</title>
+		<meta name="description" content="Simple demo app.">
+		<!-- BEMGO:styles -->
+		<!-- BEMGO:favicons -->
+	</head>
+	<body>
+		<div class="app app_no_js">
 
-	<!-- BEMGO:symbol -->
+			<!-- BEMGO:symbol -->
 
-	@@include( 'common/header/header.html')
+			@@include( 'develop/header/header.html', {
+				"slogan": "Фільтр"
+			})
 
-	@@include( 'common/main/main.html')
+			<main class="content">
+				<div class="app__layout">
+					<div class="content__cards">
+						@@for (var i = 0; i < global.jsons.content.cards.length; i++) {
 
-	@@include( 'common/footer/footer.html' )
+							@@include( 'develop/card/card.html', {
+								"title": "`+global.jsons.content.cards[i].title+`",
+								"image": "`+global.jsons.content.cards[i].image+`",
+								"rating": "`+global.jsons.content.cards[i].rating+`",
+								"description": "`+global.jsons.content.cards[i].description+`"
+							})
+						}
+					</div>
+				</div>
+			</main>
 
-</div>
-<!-- BEMGO:scripts -->
+			@@include( 'develop/footer/footer.html' )
 
-</body>
+		</div>
+		<!-- BEMGO:scripts -->
+	</body>
 </html>

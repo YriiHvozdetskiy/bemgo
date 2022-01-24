@@ -44,6 +44,7 @@ module.exports = {
 			.pipe( this.plumber() )
 			.pipe( this.addGlobalHelper() )
 			.pipe( this.compile() )
+			.pipe( this.parseURLs() )
 			.pipe( this.concat( bundle ) )
 			.pipe( this.postcss( bundle ) )
 			.pipe( this.dest( this.isDev ? options.sourcemaps : false ) )
@@ -192,7 +193,7 @@ module.exports = {
 			filterBy: this.checkIsSprite.bind( this ),
 			hooks: {
 				onSaveSpritesheet: this.onSaveSpritesheet.bind( this ),
-			},
+			},		
 		})
 	},
 

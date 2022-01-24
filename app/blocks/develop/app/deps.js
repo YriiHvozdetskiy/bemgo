@@ -6,12 +6,34 @@ module.exports = {
 
 	modules: [
 		{
-			from: './app/blocks/develop/app/scripts', // расположение модуля (CDN или путь от корня сборки)
+			// цей імпорт буде в всіх файлах до всіх сторінок    'swiper.scss',
+			import: ['normalize.css',]
+		},
+		// подключення через node_modules
+		{
+			from: 'node_modules/@fancyapps/ui/dist',// подключим fancybox из node_modules, буде на всіх сторінках в всіх css файлах і в ФІНАЛЬНІЙ збірці теж (npm run do)
+			import: [ 'fancybox.css' ],
+		}
+		,{
+			from: 'app/blocks/develop/app',
 			inject: ['jquery-3.6.0.min.js'],
 		},
 		{
-			from: './app/blocks/develop/app/scripts/plugins',
-			inject: ['jquery.validate.min.js', 'additional-methods.min.js'],
+			from: 'app/blocks/develop/app',
+			inject: ['swiper.min.js'],
+		},
+		{
+			from: 'app/blocks/develop/app',
+			inject: ['jquery.fancybox.min.js'],
+		},
+		{
+			from: 'app/blocks/develop/app',
+			inject: ['jquery.validate.min.js'],
+		},
+		//можем підключати окремі файли
+		{
+			from: 'app/blocks/develop/app',
+			inject: ['validate_script.js'],
 		},
 	],
 

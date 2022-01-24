@@ -65,5 +65,8 @@
   "engines": {
     "node": ">=10.0.0",
     "npm": ">=5.0.0"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^4.0.19"
   }
 }

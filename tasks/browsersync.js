@@ -18,7 +18,7 @@ module.exports = {
 
 		browserSync.init({
 			server: this.paths._dist,
-			port: process.env.PORT || 3333,
+			port: process.env.PORT || 3000,
 			tunnel: process.env.TUNNEL || false,
 			snippetOptions: {
 				rule: {
