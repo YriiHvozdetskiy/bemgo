@@ -13,8 +13,16 @@
 	&__img {
 		width: 15rem;
 		height: 15rem;
+		// буде в dist/styles/img/sprite_zz_item_2.jpg якщо залишем [npm run start]
+		// не буде підключено якщо буде [npm run do]
 		background: url("img/sprite/item_2.jpg") no-repeat center;
 		background-size: cover; //розтягує картинку
+	}
+	&__img-2{
+		width: 15rem;
+		height: 15rem;
+		background: url("img/sprite/rub.svg") no-repeat center;
+		background-size: cover;
 	}
 	&__picture {
 		// тег picture -- не стилізується

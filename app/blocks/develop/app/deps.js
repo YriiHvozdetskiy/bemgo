@@ -6,8 +6,8 @@ module.exports = {
 
 	modules: [
 		{
-			// цей імпорт буде в всіх файлах до всіх сторінок    'swiper.scss',
-			import: ['normalize.css',]
+			// цей імпорт буде в всіх файлах до всіх сторінок
+			import: ['normalize.css','swiper.scss']//'variable.scss'-- не додавати
 		},
 		// подключення через node_modules
 		{
