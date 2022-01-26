@@ -2,20 +2,19 @@
     <button class="button @@mod" type="@@type"><span>@@title</span></button>
 }
 @@if(isButton == ""){
-    <a href="@@href" class="button @@mod">
+    <a href="@@href" class="link @@mod">
         @@if(img != ""){
-            <img src="@@img" alt="" class="button__icon">
+            <img src="@@img" alt="@@alt" class="button__icon">
         }
-        <span class="button__text">@@title</span>
+        <span>@@title</span>
     </a>
 }
-
-
-@@include( 'common/button/button.html', {
-"title": "вход в Личный кабинет",
-"mod": "button_header",
-"isButton": "",
-"href": "login.html",
-"type": "",
-"img": "./static/img/user-icon.svg"
-})
+<!--@@include( 'develop/components/button/button.html', {-->
+<!--"title": "вход в Личный кабинет",-->
+<!--"mod": "test__button",-->
+<!--"isButton": "button",-->
+<!--"href": "login.html",-->
+<!--"type": "button",-->
+<!--"img": "@zz/time.svg",-->
+<!--"alt": ""-->
+<!--})-->

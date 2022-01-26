@@ -1,6 +1,28 @@
 <!--щоб gulp бачив файл потрібно задати клас тикий як і в папки "zz"-->
 <section class="zz test">
 	<h1 class="test__title">test</h1>
+	@@include( 'develop/components/button/button.html', {
+		"title": "вход в Личный кабинет",
+		"mod": "test__button",
+		"isButton": "button",
+		"href": "login.html",
+		"type": "button",
+		"img": "@zz/time.svg",
+		"alt": ""
+	})
+	@@include( 'develop/components/input/input.html', {
+	"type": "number",
+	"mod": "test__wrapper",
+	"isDate": "",
+	"isSelect": "",
+	"hasInformation": "",
+	"confirmNumber": "",
+	"confirmSMS": "",
+	"placeholder": "+3(9XX) XXX - XX - XX",
+	"name": "tel",
+	"label": "Номер мобильного"
+})
+
 </section>
 <section class="hero">
 	<h2 class="hero__title">hero</h2>

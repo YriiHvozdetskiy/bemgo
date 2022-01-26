@@ -63,5 +63,6 @@ app/
 ===========================================
 1.розмітка і стилі на сторінці можна розбити по [section] див. zz/service-hero,zz/service-quantum
 2.картинки до цієї секції мають бути в корневій папці [zz/assets/img.jpg, symbols]
-3.якщо потрібні стилі з якоїсь папки -- @import "service-quantum/service-quantum.scss";
+3.якщо потрібні стилі з якоїсь папки[button,input] -- @import "service-quantum/service-quantum.scss";
 4.шрифти дублюємо в app/blocks/develop/app/[static/fonts] -- щоб працювало в [npm run do]
+5.з конопки можна робити силку, вибитати type="button"
