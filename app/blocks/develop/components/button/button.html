@@ -1,0 +1,21 @@
+@@if(isButton != ""){
+    <button class="button @@mod" type="@@type"><span>@@title</span></button>
+}
+@@if(isButton == ""){
+    <a href="@@href" class="button @@mod">
+        @@if(img != ""){
+            <img src="@@img" alt="" class="button__icon">
+        }
+        <span class="button__text">@@title</span>
+    </a>
+}
+
+
+@@include( 'common/button/button.html', {
+"title": "вход в Личный кабинет",
+"mod": "button_header",
+"isButton": "",
+"href": "login.html",
+"type": "",
+"img": "./static/img/user-icon.svg"
+})

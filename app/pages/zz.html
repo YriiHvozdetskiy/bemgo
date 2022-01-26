@@ -13,8 +13,6 @@
 	<meta name="format-detection" content="address=no"/>
 	<title>Hello</title>
 	<meta name="description" content="Simple demo app."/>
-	<!--		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />-->
-	<!--		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />-->
 	<!-- BEMGO:styles -->
 	<!-- BEMGO:favicons -->
 </head>
@@ -23,7 +21,7 @@
 
 			<!-- BEMGO:symbol -->
 
-			@@include( 'develop/header/header.html', {
+			@@include( 'develop/base/header/header.html', {
 				"slogan": "Фільтр"
 			})
 
@@ -43,10 +41,10 @@
 					</div>
 				</div>
 						@@include( 'develop/blog/blog.html' )
-						@@include( 'develop/base/post/post.html' )
+						@@include( 'develop/components/post/post.html' )
 			</main>
 
-			@@include( 'develop/footer/footer.html' )
+			@@include( 'develop/base/footer/footer.html' )
 
 		</div>
 	<!-- BEMGO:scripts -->

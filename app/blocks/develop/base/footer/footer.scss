@@ -1,0 +1,9 @@
+@import '../../app/variable.scss';
+// щоб стилі [footer,header] примінялись імпортуємо в scss файл стилі [@import "../base/header/header.scss";]
+.footer {
+	p {
+		color: black;
+		font-size: 3rem;
+		font-family: $family_Roboto;
+	}
+}

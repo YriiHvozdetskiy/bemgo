@@ -1,0 +1,14 @@
+@import '../../app/variable.scss';
+// щоб стилі кнопки примінялись імпортуємо в scss файл стилі кнопки[@import "../components/button/button.scss";]
+.button {
+	border: none;
+	background: $primary-bg-color;
+	padding: 2.2rem 2.6rem;
+	color: $white-text-color;
+}
+
+.button > * {
+	font-weight: 500;
+	font-size: 1.6rem;
+	line-height: 2.9rem;
+}

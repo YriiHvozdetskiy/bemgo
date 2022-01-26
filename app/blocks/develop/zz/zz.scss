@@ -1,4 +1,11 @@
 @import '../app/variable.scss';
+@import "../components/post/post.scss"; // імпортуємо на потрібну сторінку
+@import "service-hero/service-hero.scss";
+@import "service-quantum/service-quantum.scss";
+@import "../components/button/button.scss";
+@import "../base/header/header.scss";
+@import "../base/footer/footer.scss";
+
 .test {
 	&__title {
 		color: red;
@@ -36,11 +43,11 @@
 	}
 	&__icon{
 		cursor: pointer;
-		fill: #27AE60;
+		fill: #ae276d;
 		transition: fill .25s $time-distribution-function;
 		&:hover,
 		&:focus{
-		    fill: #007aff;
+		    fill: #8ab065;
 		}
 	}
 }

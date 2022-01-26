@@ -35,21 +35,23 @@ app/
 app/
 ├── blocks/
 │   └── develop/         # Уровень develop
-│       ├── about
-│       	├── assets/about-poster.jpg
-│			├── img/sprite/about-poster.jpg
+│       ├── zz
+│       	  ├── [assets]/about-poster.jpg
+│			  ├── [img]/[sprite]/about-poster.jpg
 background-image: url("img/sprite/about-poster.jpg");
 ===========================================
-[svg]
+======= [svg]() =======
 app/
 ├── blocks/
 │   └── develop/         # Уровень develop
-│       ├── about
-│       	├── symbols/call.svg
+│       ├── zz
+│       	  ├── [symbols]/call.svg
  в HTML вказуєм
 <svg class="">
-	<use xlink:href="#(назва блоку,about)"__call"></use>		
+	<use xlink:href="#(назва блоку,zz)"__call"></use>		
 </svg>
+1.[видаляєм] весь fill з svg
+2.колір задаєм через: [fill: green;]
 ======= [@@include]() =======
 ==index.html
 @@include( 'develop/header/header.html', {
@@ -57,3 +59,9 @@ app/
 })
 ==header.html
 <h1>@@slogan</h1>
+
+===========================================
+1.розмітка і стилі на сторінці можна розбити по [section] див. zz/service-hero,zz/service-quantum
+2.картинки до цієї секції мають бути в корневій папці [zz/assets/img.jpg, symbols]
+3.якщо потрібні стилі з якоїсь папки -- @import "service-quantum/service-quantum.scss";
+4.шрифти дублюємо в app/blocks/develop/app/[static/fonts] -- щоб працювало в [npm run do]

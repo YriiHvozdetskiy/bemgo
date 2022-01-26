@@ -9,13 +9,19 @@
 	</picture>
 	<div class="hero__img"></div>
 	<div class="hero__img-2"></div>
-<!--	буде в dist/styles/img/sprite_zz_call.svg [npm run start]-->
-<!--	буде в dist/styles/img/symbol.svg [npm run do]
-з ВП не поміняти???
- (один спрайт на всі svg)
-в dist\zz.html -- в фінальній збірці через [npm run do] буде виличерзний спрайт з всіх сторінок
- -->
+	<!--	буде в dist/styles/img/sprite_zz_call.svg [npm run start]-->
+	<!--	буде в dist/styles/img/symbol.svg [npm run do]
+	з ВП не поміняти???
+	 (один спрайт на всі svg)
+	в dist\zz.html -- в фінальній збірці через [npm run do] буде виличерзний спрайт з всіх сторінок
+	 -->
 			<svg class="hero__icon">
 				<use xlink:href="#zz__call"></use>
 			</svg>
+		<svg class="test__icon">
+			<use xlink:href="#zz__service-icon-1"></use>
+		</svg>
 </section>
+@@include( 'develop/zz/service-hero/service-hero.html')
+@@include( 'develop/zz/service-quantum/service-quantum.html')
+
