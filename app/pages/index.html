@@ -19,23 +19,7 @@
 			<!-- BEMGO:symbol -->
 
 			@@include( 'develop/header/header.html')
-
-			<main class="content">
-				<div class="app__layout">
-					<div class="content__cards">
-						@@for (var i = 0; i < global.jsons.content.cards.length; i++) {
-
-							@@include( 'develop/card/card.html', {
-								"title": "`+global.jsons.content.cards[i].title+`",
-								"image": "`+global.jsons.content.cards[i].image+`",
-								"rating": "`+global.jsons.content.cards[i].rating+`",
-								"description": "`+global.jsons.content.cards[i].description+`"
-							})
-						}
-					</div>
-				</div>
-			</main>
-
+			@@include( 'develop/main/main.html')
 			@@include( 'develop/footer/footer.html' )
 
 		</div>

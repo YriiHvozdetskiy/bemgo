@@ -1,4 +1,5 @@
 @import "variable.scss";
+@import "../base/post/post.scss"; // при npm run do, буде на всіх сторінках
 html {
 	font-size: 10px;
 }
@@ -106,7 +107,7 @@ blockquote {
 	@font-face {
 		font-family: quote($style-name);
 		src: url($filepath + ".woff") format('woff'),
-		url($filepath + ".woff2") format('woff2'),
+		//url($filepath + ".woff2") format('woff2'),
 		url($filepath + ".ttf") format('truetype');
 		font-weight: $weight;
 		font-style: $style;
