@@ -14,9 +14,6 @@ npm run add header[img/sprite,assets]
 [npm run add page header]
 
 ======= структура папки  =======
-
-
-
 ======= [Js]()=======
 Пишем в app/app.js і цей код підкл до всіх сторінок 
 
@@ -51,3 +48,10 @@ app/
 <svg class="">
 	<use xlink:href="#(назва блоку,about)"__call"></use>		
 </svg>
+======= [@@include]() =======
+==index.html
+@@include( 'develop/header/header.html', {
+"slogan": "Фільтр"
+})
+==header.html
+<h1>@@slogan</h1>

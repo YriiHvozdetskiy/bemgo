@@ -1,7 +1,8 @@
+@import '../app/variable.scss';
 .footer {
-	display: block;
-	font-size: 12px;
-	background-color: #2e3740;
-	color: rgba(255, 255, 255, 0.4);
-	padding: 40px 0;
+	p {
+		color: #0057B7;
+		font-size: 3rem;
+		font-family: $family_Roboto;
+	}
 }

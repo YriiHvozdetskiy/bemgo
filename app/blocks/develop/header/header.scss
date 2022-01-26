@@ -1,5 +1,9 @@
+@import '../app/variable.scss';
 .header {
-	display: block;
-	background-color: #fff;
-	padding: 30px 0;
+	p {
+		color: aquamarine;
+		font-size: 3rem;
+		font-family: $family_Montserrat;
+		font-weight: 700;
+	}
 }
