@@ -17,7 +17,7 @@ module.exports = {
 	},
 
 	build: {
-		// imagemin: [ 'png', 'jpg', 'svg' ],
+		imagemin: [ 'png', 'jpg', 'svg' ],
 		sourcemaps: [ 'js', 'css' ],
 		autoprefixer: [ 'last 3 versions'], //, 'ie 10', 'ie 11'
 		bundles: [ 'css','js' ],

@@ -66,3 +66,4 @@ app/
 3.якщо потрібні стилі з якоїсь папки[button,input] -- @import "service-quantum/service-quantum.scss";
 4.шрифти дублюємо в app/blocks/develop/app/[static/fonts] -- щоб працювало в [npm run do]
 5.з конопки можна робити силку, вибитати type="button"
+6.картинки оптимізуються в режимі продакшн [npm run do],оптимізуються ті картинки які вставлені в HTML(png,jpg,svg)
