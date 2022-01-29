@@ -1,0 +1,15 @@
+@import '../app/variable.scss';
+.header {
+	&__menu {
+		& > ul {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			& > li {
+				&:not(:last-child) {
+					margin-right: 1rem;
+				}
+			}
+		}
+	}
+}

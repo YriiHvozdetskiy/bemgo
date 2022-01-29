@@ -18,19 +18,15 @@
 </head>
 <body>
 	<div class="app app_no_js">
-
 			<!-- BEMGO:symbol -->
-
-			@@include( 'develop/base/header/header.html', {
+			@@include( 'develop/header/header.html', {
 				"slogan": "Фільтр"
 			})
-
 			<main class="main">
 				@@include( 'develop/zz/zz.html' )
 				<div class="app__layout">
 					<div class="content__cards">
 						@@for (var i = 0; i < global.jsons.content.cards.length; i++) {
-
 							@@include( 'develop/card/card.html', {
 								"title": "`+global.jsons.content.cards[i].title+`",
 								"image": "`+global.jsons.content.cards[i].image+`",
@@ -43,9 +39,7 @@
 						@@include( 'develop/blog/blog.html' )
 						@@include( 'develop/components/post/post.html' )
 			</main>
-
-			@@include( 'develop/base/footer/footer.html' )
-
+			@@include( 'develop/footer/footer.html' )
 		</div>
 	<!-- BEMGO:scripts -->
 </body>
