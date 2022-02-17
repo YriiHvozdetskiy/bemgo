@@ -61,6 +61,12 @@ app/
 <h1>@@slogan</h1>
 
 ===========================================
+=== [autoprefixer]() ===
+// відключаєм при розробці (tasks/styles.js)
+[plugins.push(
+require( 'autoprefixer' )({ remove: false, browsers: this.config.build.autoprefixer }),
+)]
+
 1.розмітка і стилі на сторінці можна розбити по [section] див. zz/service-hero,zz/service-quantum
 2.картинки до цієї секції мають бути в корневій папці [zz/assets/img.jpg, symbols]
 3.якщо потрібні стилі з якоїсь папки[button,input] -- @import "service-quantum/service-quantum.scss";
