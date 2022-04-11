@@ -73,3 +73,9 @@ require( 'autoprefixer' )({ remove: false, browsers: this.config.build.autoprefi
 4.шрифти дублюємо в app/blocks/develop/app/[static/fonts] -- щоб працювало в [npm run do]
 5.з конопки можна робити силку, вибитати type="button"
 6.картинки оптимізуються в режимі продакшн [npm run do],оптимізуються ті картинки які вставлені в HTML(png,jpg,svg)
+7.модифікатор до кнопки button пишем в scss кнопки н-д: "mod": "button_accent" (див в index.html)
+8.коміти в scss не удаляються
+9.в файлі svg картинкам/іконки видаляти fill/stroke які задають колір і задавати колір через css
+10. назву обєктів в data.json пишем камелКейсом(careersInfoItem)
+11. в jquery вішаєм обробник подій так:$(document).on('click', '.dropdown__list', (e) =>{}, через refs.dropDownList -- не працює
+12. $(e.target) -- e.target для jquery
