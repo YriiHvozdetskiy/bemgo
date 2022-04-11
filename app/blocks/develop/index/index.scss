@@ -4,3 +4,63 @@
 		color: aquamarine;
 	}
 }
+
+.individual-projects {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__item {
+		flex: 0 1 45%;
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		&:not(:last-child) {
+			margin-bottom: 6.8rem;
+		}
+	}
+	&__title {
+		margin-bottom: 2rem;
+		& > * {
+			font-weight: 600;
+			font-size: 1.8rem;
+			line-height: 2.8rem;
+			color: $title-color;
+		}
+	}
+	&__text {
+		margin-bottom: 2rem;
+		& > * {
+			font-size: 1.2rem;
+			line-height: 1.6rem;
+		}
+	}
+	&__link {
+		display: flex;
+		align-items: center;
+		margin-top: auto;
+		//ховер на текст силки
+		&:hover,
+		&:focus {
+			& > * {
+				color: #8ab065;
+			}
+		}
+		& > * {
+			color: $accent;
+			transition: color .25s $time-distribution-function;
+		}
+		//ховер на svg картинку
+		&:hover,
+		&:focus {
+			.individual-projects__icon {
+				stroke: #8ab065;
+			}
+		}
+	}
+	&__icon {
+		max-width: 1.6rem;
+		max-height: 1.6rem;
+		stroke: $accent;
+		transition: stroke .25s $time-distribution-function;
+	}
+}
