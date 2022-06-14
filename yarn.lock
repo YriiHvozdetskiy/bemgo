@@ -897,11 +897,6 @@
     enabled "2.0.x"
     kuler "^2.0.0"
 
-"@fancyapps/ui@^4.0.19":
-  version "4.0.20"
-  resolved "https://registry.yarnpkg.com/@fancyapps/ui/-/ui-4.0.20.tgz#85106e4c2a40baa43d0ba2ac60934d784cec995f"
-  integrity sha512-/2aZtZzpkCULSWAMh973iDRYwijmfJPmncdQMNDXF87zDRKZn6x32oWH79/23flbQ31p0uy9ozsoKfZVr3pfxQ==
-
 "@jimp/bmp@^0.9.8":
   version "0.9.8"
   resolved "https://registry.yarnpkg.com/@jimp/bmp/-/bmp-0.9.8.tgz#5933ab8fb359889bec380b0f7802163374933624"
