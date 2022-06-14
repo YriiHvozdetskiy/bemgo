@@ -17,7 +17,7 @@ npm run add header[img/sprite,assets]
 
 ======= структура папки  =======
 ======= [Js]()=======
-Пишем в app/app.js і цей код підкл до всіх сторінок 
+Пишем в app/app.js і цей код підкл до всіх сторінок
 
 ======= [img]() =======
 app/
@@ -29,7 +29,6 @@ app/
 [картинки мають бути в папці assets]
 вказуєм що тут є картинка
 <img src="@about/about-poster.jpg" alt="">
-<img src="@about/about-poster.jpg" alt="">
 ===========================================
 [картинки через background-image мають бути в папці img/sprite]
 app/
@@ -39,26 +38,58 @@ app/
 │       	  ├── [assets]/about-poster.jpg
 │			  ├── [img]/[sprite]/about-poster.jpg
 background-image: url("img/sprite/about-poster.jpg");
+[можуть бути і svg]
+background-image: url("img/sprite/about-poster.jpg");
 ===========================================
+======= [img для components]() =======
+[картинки які потрібні для компонентів(components) зберігаєм так:]
+app/
+├── blocks/
+│   └── develop/         # Уровень develop
+│       ├── index
+│       	├── assets/about-poster.jpg
+│       ├── components
+│       	├── assets/popup-success-bg.png
+│
 ======= [svg]() =======
 app/
 ├── blocks/
 │   └── develop/         # Уровень develop
 │       ├── zz
 │       	  ├── [symbols]/call.svg
- в HTML вказуєм
+в HTML вказуєм
 <svg class="">
-	<use xlink:href="#(назва блоку,zz)"__call"></use>		
+<use xlink:href="#(назва блоку,zz)"__call"></use>		
 </svg>
 1.[видаляєм] весь fill з svg
 2.колір задаєм через: [fill: green;]
-======= [@@include]() =======
-==index.html
-@@include( 'develop/header/header.html', {
-"slogan": "Фільтр"
-})
-==header.html
+3.<svg [width="9" height="7" viewBox="0 0 9 7"]  - розміри для svg іконок залишаєм/видаляєм щою при зменшені html font-size  пропорції залишались [деколи допомагає]
+4. змінити fill буває чомусь можливо тільки через id svg (#index__favorite path {fill: $accent;})
+	======= [@@include]() =======
+	==index.html
+	@@include( 'develop/header/header.html', {
+	"slogan": "Фільтр"
+	})
+	==header.html
 <h1>@@slogan</h1>
+
+===========================================
+=== [цикл в HTML]() ===
+=== [@for (var i = 0; i < global.jsons.назва блоку.назва масива в json.length; i++)]() ===
+
+шукати приклад по класу:[gallery__list]
+--буде стільки li, скільки в масиві galleryItem обєктів
+--підставиться значення яке в json під [img] `+global.jsons.index.galleryItem[i].img+`
+
+<ul class="gallery__list">
+    @@for (var i = 0; i < global.jsons.index.galleryItem.length; i++) {
+        <li class="gallery__item">
+            <picture class="gallery__list-img">
+                <img src="@index/   `суда підставиться значення яке в  json`  .jpg" alt="">
+            </picture>
+        </li>
+    }
+</ul>
 
 ===========================================
 === [autoprefixer]() ===
@@ -80,3 +111,4 @@ require( 'autoprefixer' )({ remove: false, browsers: this.config.build.autoprefi
 11. в jquery вішаєм обробник подій так:$(document).on('click', '.dropdown__list', (e) =>{}, через refs.dropDownList -- не працює
 12. $(e.target) -- e.target для jquery
 13. список можна робити через цикл @for
+14. 
