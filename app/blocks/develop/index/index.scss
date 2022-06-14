@@ -1,7 +1,13 @@
 @import '../app/variable.scss';
-.hero{
-	&__title{
+//@import "../components/select-dropdown/select-dropdown.scss"; щоб були видні стилі
+
+/* ============================ hero START ================================================================= */
+.hero {
+	&__title {
 		color: aquamarine;
 	}
 }
+/* ============================ hero END ================================================================= */
+
+
 

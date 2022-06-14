@@ -39,6 +39,10 @@ module.exports = {
 			from: 'app/blocks/develop/app',
 			inject: ['select_dropdown.js'],
 		},
+		{
+			from: 'app/blocks/develop/app',
+			inject: ['sliders.js'],
+		},
 	],
 
 }
