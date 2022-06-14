@@ -1,9 +1,9 @@
 <!--щоб gulp бачив файл потрібно задати клас тикий як і в папки "zz"-->
 <section class="hero">
 	<h2 class="hero__title">hero</h2>
-<section class="zz test">
-	<h1 class="test__title">test</h1>
-	@@include( 'develop/components/button/button.html', {
+	<section class="zz test">
+		<h1 class="test__title">test</h1>
+		@@include( 'develop/components/button/button.html', {
 		"title": "вход в Личный кабинет",
 		"mod": "test__button",
 		"isButton": "button",
@@ -11,26 +11,26 @@
 		"type": "button",
 		"img": "@zz/time.svg",
 		"alt": ""
-	})
-	@@include( 'develop/components/input/input.html', {
-	"type": "number",
-	"mod": "test__wrapper",
-	"isDate": "",
-	"isSelect": "",
-	"hasInformation": "",
-	"confirmNumber": "",
-	"confirmSMS": "",
-	"placeholder": "+3(9XX) XXX - XX - XX",
-	"name": "tel",
-	"label": "Номер мобильного"
-})
+		})
+		@@include( 'develop/components/input/input.html', {
+		"type": "number",
+		"mod": "test__wrapper",
+		"isDate": "",
+		"isSelect": "",
+		"hasInformation": "",
+		"confirmNumber": "",
+		"confirmSMS": "",
+		"placeholder": "+3(9XX) XXX - XX - XX",
+		"name": "tel",
+		"label": "Номер мобильного"
+		})
 
-</section>
+	</section>
 	<picture class="hero__picture">
-   	<img src="@zz/item_3.jpg" alt="">
+		<img src="@zz/item_3.jpg" alt="">
 	</picture>
 	<picture class="hero__img">
-	    <img src="@zz/blog-info-1.jpg" alt="">
+		<img src="@zz/blog-info-1.jpg" alt="">
 	</picture>
 	<div class="hero__img"></div>
 	<div class="hero__img-2"></div>
@@ -40,12 +40,25 @@
 	 (один спрайт на всі svg)
 	в dist\zz.html -- в фінальній збірці через [npm run do] буде виличерзний спрайт з всіх сторінок
 	 -->
-			<svg class="hero__icon">
-				<use xlink:href="#zz__call"></use>
-			</svg>
-		<svg class="test__icon">
-			<use xlink:href="#zz__service-icon-1"></use>
-		</svg>
+	<svg class="hero__icon">
+		<use xlink:href="#zz__call"></use>
+	</svg>
+	<svg class="hero__icon">
+		<use xlink:href="#zz__logo"></use>
+	</svg>
+	<svg class="test__icon">
+		<use xlink:href="#zz__service-icon-1"></use>
+	</svg>
+	<ul class="projects__list individual-projects">
+		@@for (var i = 0; i < global.jsons.index.items.length; i++) {
+		@@include( 'develop/index/individual-projects__item.html', {
+		"title": "`+global.jsons.index.items[i].title+`",
+		"text": "`+global.jsons.index.items[i].text+`",
+		"link": "`+global.jsons.index.items[i].link+`",
+		"img": "`+global.jsons.index.items[i].img+`"
+		})
+		}
+	</ul>
 </section>
 @@include( 'develop/zz/service-hero/service-hero.html')
 @@include( 'develop/zz/service-quantum/service-quantum.html')
