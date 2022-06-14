@@ -26,6 +26,11 @@ module.exports = {
 			from: 'app/blocks/develop/app',
 			inject: ['jquery.fancybox.min.js'],
 		},
+		// всі елементи з DOM
+		{
+			from: 'app/blocks/develop/app',
+			inject: ['refs.js'],
+		},
 		{
 			from: 'app/blocks/develop/app',
 			inject: ['jquery.validate.min.js'],
