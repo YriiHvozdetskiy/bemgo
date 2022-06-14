@@ -1,85 +1,97 @@
+@import '../../app/variable.scss';
+
 .dropdown {
-   position: relative;
-   &__button {
-      position: relative;
-      display: block;
-      width: 100%;
-      text-align: left;
-      background: #FFFFFF;
-      border: 1px solid #7E9BBD;
-      border-radius: 0.6rem;
-      height: 4.6rem;
-      padding: 1.3rem 3.5rem 1.3rem 2rem;
-      font-weight: 500;
-      font-size: 1.6rem;
-      line-height: 2rem;
-      cursor: pointer;
-      //& > * {
-      //   pointer-events: none;
-      //}
-      &:hover,
-      &:focus{
-         outline: none;
-         box-shadow: 0 0 0 0.4rem rgba(176, 198, 225, 0.6);
-      }
-      &:focus{
-         //outline: none;
-         //box-shadow: 0 0 0 0.4rem rgba(176, 198, 225, 0.6);
-      }
-      &:after {
-         content: "";
-         position: absolute;
-         top: 50%;
-         right: 1.5rem;
-         transform: translateY(-50%);
-         /* Рисуем треугольник */
-         width: 0;
-         height: 0;
-         border-width: 1.4rem 0.6rem 0 0.6rem;
-         border-color: #79849B transparent transparent transparent;
-         border-style: solid;
-         /* Снимаем клик с треугольника */
-         pointer-events: none;
-      }
-      &_active {
-         outline: none;
-         box-shadow: 0 0 0 0.4rem rgba(176, 198, 225, 0.6);
-      }
-   }
-   &__list {
-      display: none;
-      position: absolute;
-      left: 0;
-      top: 5.2rem;
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-      background: #FFFFFF;
-      box-shadow: 0 0.4rem 0.8rem rgba(176, 198, 225, 0.6);
-      overflow: hidden;
-      border-radius: 0.6rem;
-      width: 100%;
-      z-index: 1;
-      &_visible {
-         display: block;
-      }
-   }
-   &__item{
-      margin: 0;
-      border: 1px solid #7E9BBD;
-      border-bottom: 0;
-      padding: 1.3rem 2rem;
-      cursor: pointer;
-      &:first-child {
-         border-radius: 0.6rem 0.6rem 0 0;
-      }
-      &:last-child {
-         border-radius: 0 0 0.6rem 0.6rem;
-         border-bottom: 1px solid #7E9BBD;
-      }
-      &:hover,
-      &:focus{
-         background: rgba(176, 198, 225, 0.26);
-      }
-   }
+	position: relative;
+	.active {
+		color: $accent;
+		&:after {
+			background: url("app/blocks/develop/components/img/sprite/arrow-down-active.svg") no-repeat center;
+			background-size: cover;
+			pointer-events: none;
+		}
+	}
+	&__button {
+		position: relative;
+		display: block;
+		width: 100%;
+		text-align: left;
+		background: #FFFFFF;
+		border-radius: 0.6rem;
+		height: 4.6rem;
+		padding: 1rem 2rem 1rem 1.4rem;
+		font-family: $family_Montserrat;
+		font-weight: 500;
+		font-size: 1.2rem;
+		line-height: 1.5rem;
+		letter-spacing: 0.05em;
+		color: $primary-text-color;
+		cursor: pointer;
+		text-transform: uppercase;
+		//& > * {
+		//   pointer-events: none;
+		//}
+		&:hover,
+		&:focus {
+			outline: none;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: .5rem;
+			width: .9rem;
+			height: .7rem;
+			transform: translate(0, -50%,);
+			background: url("app/blocks/develop/components/img/sprite/arrow-down.svg") no-repeat center;
+			background-size: cover;
+			pointer-events: none;
+		}
+		&_active {
+			outline: none;
+			box-shadow: 0 0 0 0.4rem rgba(176, 198, 225, 0.6);
+		}
+	}
+	&__list {
+		display: none;
+		position: absolute;
+		left: -0.5rem;
+		top: 4.5rem;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		background: #FFFFFF;
+		overflow: hidden;
+		border: .1rem solid #EEF0F2;
+		box-sizing: border-box;
+		border-radius: 1rem;
+		z-index: 1;
+		width: max-content;
+		&_visible {
+			display: block;
+		}
+	}
+	&__item {
+		margin: 0;
+		background: $white-text-color;
+		box-sizing: border-box;
+		border-bottom: 0;
+		padding: 1.4rem 2rem;
+		cursor: pointer;
+		//font-family: $family_Montserrat;
+		font-weight: 500;
+		font-size: 1.2rem;
+		line-height: 1.5rem;
+		letter-spacing: 0.05em;
+		color: $primary-text-color;
+		text-transform: uppercase;
+		transition: color .25s $time-distribution-function;
+		&.hidden {
+			display: none;
+		}
+
+		&:hover,
+		&:focus {
+			color: $accent;
+		}
+	}
 }

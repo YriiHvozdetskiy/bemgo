@@ -2,7 +2,6 @@
 // щоб стилі кнопки примінялись імпортуємо в scss файл стилі кнопки[@import "../components/button/button.scss";]
 .button {
 	border: none;
-	background: $primary-bg-color;
 	padding: 2.2rem 2.6rem;
 	color: $white-text-color;
 }
