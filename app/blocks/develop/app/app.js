@@ -1,5 +1,6 @@
 $(document).ready(function () {
 	console.log('ready')
+	searchElDropdown()
 })
 
 $(window).on('load', function () {
