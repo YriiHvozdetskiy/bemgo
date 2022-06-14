@@ -7,7 +7,7 @@ module.exports = {
 	modules: [
 		{
 			// цей імпорт буде в всіх файлах до всіх сторінок
-			import: ['normalize.css', 'swiper.scss']//'variable.scss'-- не додавати
+			import: ['normalize.css', 'swiper.scss', 'fancybox.min.css']//'variable.scss'-- не додавати
 		},
 		// подключення через node_modules
 		// {
