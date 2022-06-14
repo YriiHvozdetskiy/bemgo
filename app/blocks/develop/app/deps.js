@@ -35,6 +35,10 @@ module.exports = {
 			from: 'app/blocks/develop/app',
 			inject: ['validate_script.js'],
 		},
+		{
+			from: 'app/blocks/develop/app',
+			inject: ['select_dropdown.js'],
+		},
 	],
 
 }
