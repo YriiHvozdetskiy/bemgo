@@ -1,18 +1,5 @@
 <main class="main">
 	<section class="index hero">
 		<h1 class="hero__title">main</h1>
-			<svg class="hero__icon">
-				<use xlink:href="#index__time"></use>
-			</svg>
-				<ul class="projects__list individual-projects">
-					@@for (var i = 0; i < global.jsons.index.items.length; i++) {
-						@@include( 'develop/index/individual-projects__item.html', {
-							"title": "`+global.jsons.index.items[i].title+`",
-							"text": "`+global.jsons.index.items[i].text+`",
-							"link": "`+global.jsons.index.items[i].link+`",
-							"img": "`+global.jsons.index.items[i].img+`"
-						})
-					}
-				</ul>
 	</section>
 </main>

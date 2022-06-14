@@ -1,8 +1,7 @@
 @import '../app/variable.scss';
-@import "../components/post/post.scss"; // імпортуємо на потрібну сторінку
 @import "service-hero/service-hero.scss";
 @import "service-quantum/service-quantum.scss";
-@import "../components/button/button.scss";
+@import "../components/button/button.scss";// імпортуємо на потрібну сторінку
 @import "../components/input/input.scss";
 //@import "../header/header.scss"; // дублював стилі на index.html
 //@import "../footer/footer.scss";
@@ -13,6 +12,7 @@
 		font-size: 3rem;
 	}
 }
+
 .hero {
 	&__title {
 		font-size: 5rem;
