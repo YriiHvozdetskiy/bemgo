@@ -111,4 +111,4 @@ require( 'autoprefixer' )({ remove: false, browsers: this.config.build.autoprefi
 11. в jquery вішаєм обробник подій так:$(document).on('click', '.dropdown__list', (e) =>{}, через refs.dropDownList -- не працює
 12. $(e.target) -- e.target для jquery
 13. список можна робити через цикл @for
-14. 
+14. data.json - може бути для кожної сторінки окремо(не обовязково так робити)
