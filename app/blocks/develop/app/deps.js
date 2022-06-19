@@ -26,27 +26,27 @@ module.exports = {
 			from: 'app/blocks/develop/app',
 			inject: ['jquery.fancybox.min.js'],
 		},
-		// всі елементи з DOM
-		{
-			from: 'app/blocks/develop/app',
-			inject: ['refs.js'],
-		},
 		{
 			from: 'app/blocks/develop/app',
 			inject: ['jquery.validate.min.js'],
 		},
-		//можем підключати окремі файли
+		//можем підключати в загаліний файл окремі файли з кодом для select_dropdown наприклад чи слайдера (всі ці файли будуть в одному app.js)
+		// всі елементи з DOM
 		{
 			from: 'app/blocks/develop/app',
-			inject: ['validate_script.js'],
+			import: ['refs.js'],
 		},
 		{
 			from: 'app/blocks/develop/app',
-			inject: ['select_dropdown.js'],
+			import: ['validate_script.js'],
 		},
 		{
 			from: 'app/blocks/develop/app',
-			inject: ['sliders.js'],
+			import: ['select_dropdown.js'],
+		},
+		{
+			from: 'app/blocks/develop/app',
+			import: ['sliders.js'],
 		},
 	],
 

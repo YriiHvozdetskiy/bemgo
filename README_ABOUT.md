@@ -112,3 +112,5 @@ require( 'autoprefixer' )({ remove: false, browsers: this.config.build.autoprefi
 12. $(e.target) -- e.target для jquery
 13. список можна робити через цикл @for
 14. data.json - може бути для кожної сторінки окремо(не обовязково так робити)
+15. import в deps.js - імпортуємо файли в один (н-д app.js)
+16. inject в deps.js - підключаємо на сторінку файли 
