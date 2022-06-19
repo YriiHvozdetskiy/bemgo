@@ -29,6 +29,12 @@ module.exports = {
 		{
 			from: 'app/blocks/develop/app',
 			inject: ['jquery.validate.min.js'],
+			// function filter - можем підключати файли тільки на ту сторінку яка нам потрібна
+			filter(file, node, type, page) {
+				// проверка includes( '[імя сторіки на якій підключати файл]' )
+				// пишем в page <div class="app app_no_js [index]">
+				return node.attrs.class.split(' ').includes('index') // буде підключений тільки на сторінці 'index'
+			}
 		},
 		//можем підключати в загаліний файл окремі файли з кодом для select_dropdown наприклад чи слайдера (всі ці файли будуть в одному app.js)
 		// всі елементи з DOM
