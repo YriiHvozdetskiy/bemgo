@@ -115,6 +115,6 @@ require( 'autoprefixer' )({ remove: false, browsers: this.config.build.autoprefi
 15. import в deps.js - імпортуємо файли в один (н-д app.js)
 16. inject в deps.js - підключаємо на сторінку файли 
 17. 15. function filter в deps.js -  можем підключати файли тільки на ту сторінку яка нам потрібна
-<div class="app app_no_js [zz]">
+<div class="app app_no_js [zz]"></div>
     <!-- BEMGO:symbols -->
 16. 
