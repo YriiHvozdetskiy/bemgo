@@ -97,19 +97,11 @@ blockquote {
 	margin: 0;
 	padding: 0;
 }
-[class*="__container"] {
-	//задаєм розмір контейнера +30px для падінгів
-	max-width: 108rem;
-	margin: 0 auto;
-}
 .app {
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
-}
-.main {
-	flex: 1 1 auto;
 }
 .visually-hidden {
 	position: absolute;
@@ -120,6 +112,14 @@ blockquote {
 	padding: 0;
 	clip: rect(0 0 0 0);
 	overflow: hidden;
+}
+.main {
+	flex: 1 1 auto;
+}
+[class*="__container"] {
+	//задаєм розмір контейнера +30px для падінгів
+	max-width: 108rem;
+	margin: 0 auto;
 }
 @mixin font-face($style-name, $file:$style-name, $weight:normal, $style:normal) {
 	$filepath: "/static/fonts/" + $file;
