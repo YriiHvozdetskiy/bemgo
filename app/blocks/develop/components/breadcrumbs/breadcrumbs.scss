@@ -1,4 +1,35 @@
 @import '../../app/variable.scss';
 .breadcrumbs {
-
+	& > * {
+		display: flex;
+		align-items: center;
+		& > * {
+			position: relative;
+			&:not(:last-child) {
+				margin-right: 1rem;
+				&:hover,
+				&:focus {
+					& > * {
+						color: yellow;
+					}
+				}
+				&::after {
+					content: "/";
+					position: absolute;
+					top: 50%;
+					right: -0.6rem;
+					transform: translate(0, -50%);
+					color: green;
+					transition: color .25s $time-distribution-function;
+				}
+			}
+			& > * {
+				font-weight: 500;
+				font-size: 1.2rem;
+				line-height: 1.5rem;
+				color: yellow;
+				transition: color .25s $time-distribution-function;
+			}
+		}
+	}
 }

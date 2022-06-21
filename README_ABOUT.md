@@ -117,4 +117,4 @@ require( 'autoprefixer' )({ remove: false, browsers: this.config.build.autoprefi
 17. 15. function filter в deps.js -  можем підключати файли тільки на ту сторінку яка нам потрібна
 <div class="app app_no_js [zz]"></div>
     <!-- BEMGO:symbols -->
-16. 
+16.svg icon - можна щоб були н-д в паці index а застосовувати на іншій сторінці
