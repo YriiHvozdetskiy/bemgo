@@ -1,10 +1,10 @@
 /* ============================ select_dropdown.js START ================================================================= */
-$(document).on('click', '.dropdown__button', () => {
+$(document).on('click', '.dropdown__button', function () {
 	refs.dropDownList.toggleClass('dropdown__list_visible')
 	refs.dropDownBtn.toggleClass('active')
 })
 
-$(document).on('click', '.dropdown__list', (e) => {
+$(document).on('click', '.dropdown__list', function (e) {
 	const target = $(e.target)
 	const textElem = target.text()
 	const dataValueElem = target.data('value')
@@ -26,7 +26,7 @@ const searchElDropdown = () => {
 }
 
 // Нажатие на Escape. Закрыть дропдаун
-$(document).on('keydown', (e) => {
+$(document).on('keydown', function (e) {
 	if (e.key === 'Escape') {
 		refs.dropDownList.removeClass('dropdown__list_visible')
 		refs.dropDownBtn.removeClass('active')
@@ -34,7 +34,7 @@ $(document).on('keydown', (e) => {
 });
 
 // Клик снаружи дропдауна. Закрыть дропдаун
-$(document).on('click', (e) => {
+$(document).on('click', function (e) {
 	//TODO як переписати це на JQ ?
 	// const target = $(e.target)
 	// console.log('e.target',e.target)
