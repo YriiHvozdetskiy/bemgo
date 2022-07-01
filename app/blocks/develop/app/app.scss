@@ -128,9 +128,10 @@ input[type=number] {
 	flex: 1 1 auto;
 }
 [class*="__container"] {
-	//задаєм розмір контейнера +30px для падінгів
-	max-width: 108rem;
+	//розмір контейнера 1760px +30px для падінгів = 1790px
+	max-width: 179rem;
 	margin: 0 auto;
+	padding: 0 1.5rem;
 }
 @mixin font-face($style-name, $file:$style-name, $weight:normal, $style:normal) {
 	$filepath: "/static/fonts/" + $file;
