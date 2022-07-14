@@ -1,24 +1,11 @@
 $primary-text-color: #6B7280;
-$white-text-color: #ffffff;
-$accent:#3730A3;
+$light: #ffffff;
+$accent: #3730A3;
 $title-color: #1F2937;
 $accent-hover: #E28B00;
 $secondary: #718093;
-
-
-$bg-color: #EDEDED;
-$light-blue: #0066D6;
-$blue: #0057B7;
-$primary-bg-color: #041E2F;
-$title-color: #000000;
-$contact-info: #1D7EEA;
-$footer-bg: #00263E;
-$link-color: #2596FF;
-$hover-contact-info: #1864B9;
-$hover-footer-bg: #001725;
-$hover-transparent-btn: #1D7EEA;
-$medics-bg: #020410;
-$select-bg:#004068;
+//розмір контейнера 1760px +30px для падінгів = 1790px
+$containerWidth: 179rem;
 
 $time-distribution-function: cubic-bezier(0.4, 0, 0.2, 1);
 

@@ -23,6 +23,12 @@ a:active {
 html,
 body {
 	height: 100%;
+	// Скрол заблокаваний
+	&.no-scroll {
+		overflow: hidden;
+		touch-action: none;
+		overscroll-behavior: none;
+	}
 }
 body {
 	margin: 0;
@@ -128,8 +134,7 @@ input[type=number] {
 	flex: 1 1 auto;
 }
 [class*="__container"] {
-	//розмір контейнера 1760px +30px для падінгів = 1790px
-	max-width: 179rem;
+	max-width: $containerWidth;
 	margin: 0 auto;
 	padding: 0 1.5rem;
 }
