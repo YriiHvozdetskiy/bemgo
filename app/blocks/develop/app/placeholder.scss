@@ -8,12 +8,11 @@
 	font-size: 2.6rem;
 	line-height: 1.19;
 	color: green;
-}
-
-%title{
-	font-weight: 700;
-	font-size: 3rem;
-	color: fuchsia;
+//для тексту .header__text > p
+	& > * {
+		color: red;
+		border: solid 1px tomato;
+	}
 }
 
 //@extend %text;
