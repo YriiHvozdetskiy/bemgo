@@ -95,7 +95,7 @@
 			}
 		}
 		& > * {
-			color: $accent;
+			color: $accent-color;
 			transition: color .25s $time-distribution-function;
 		}
 		//ховер на svg картинку
@@ -109,7 +109,7 @@
 	&__icon {
 		max-width: 1.6rem;
 		max-height: 1.6rem;
-		stroke: $accent;
+		stroke: $accent-color;
 		transition: stroke .25s $time-distribution-function;
 	}
 }

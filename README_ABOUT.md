@@ -64,7 +64,7 @@ app/
 1.[видаляєм] весь fill з svg
 2.колір задаєм через: [fill: green;]
 3.<svg [width="9" height="7" viewBox="0 0 9 7"]  - розміри для svg іконок залишаєм/видаляєм щою при зменшені html font-size  пропорції залишались [деколи допомагає]
-4. змінити fill буває чомусь можливо тільки через id svg (#index__favorite path {fill: $accent;})
+4. змінити fill буває чомусь можливо тільки через id svg (#index__favorite path {fill: $accent-color;})
 	======= [@@include]() =======
 	==index.html
 	@@include( 'develop/header/header.html', {
