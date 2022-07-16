@@ -1,0 +1,19 @@
+@import 'variable.scss';
+//шаблон класів для елементів з однаковими чи сходжими стилями
+
+%text {
+	font-family: $font-family;
+	font-weight: 600;
+	font-size: 2.6rem;
+	line-height: 1.19;
+	color: green;
+}
+
+%title{
+	font-weight: 700;
+	font-size: 3rem;
+	color: fuchsia;
+}
+
+//@extend %text;
+

@@ -4,17 +4,19 @@
 	border: none;
 	padding: 2.2rem 2.6rem;
 	color: $light;
+	& > * {
+		font-weight: 500;
+		font-size: 1.6rem;
+		line-height: 2.9rem;
+	}
 }
 
-.button > * {
-	font-weight: 500;
-	font-size: 1.6rem;
-	line-height: 2.9rem;
-}
-.link > * {
-	font-weight: 500;
-	font-size: 1.6rem;
-	line-height: 2.9rem;
+.link {
+	& > * {
+		font-weight: 500;
+		font-size: 1.6rem;
+		line-height: 2.9rem;
+	}
 }
 //@@include( 'develop/components/button/button.html', {
 //"title": "вход в Личный кабинет",

@@ -1,4 +1,6 @@
 @import "variable.scss";
+
+/* ============================ app START ================================================================= */
 html {
 	font-size: 10px;
 }
@@ -161,3 +163,5 @@ input[type=number] {
 
 @include font-face($family_Raleway, 'Raleway-Regular', 400, normal);
 @include font-face($family_Raleway, 'Raleway-Bold', 700, normal);
+
+/* ============================ app END ================================================================= */
