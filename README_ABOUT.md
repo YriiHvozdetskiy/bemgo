@@ -98,8 +98,32 @@ app/
 require( 'autoprefixer' )({ remove: false, browsers: this.config.build.autoprefixer }),
 )]
 
+=== [placeholder.scss [@extend]]() ===
+1.задаєм загальні стилі (шаблон)
 
+%text {
+	font-family: $font-family;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	color: red;
+}
 
+2. в  потрібному файлі приміняєм ці стилі 
+
+.header {
+   &__text {
+ 	   [ @extend %text; ]
+   }	
+}
+
+3. якщо потрібно щось змінити в шаблоні стилів пишеи потрібне свойство нище
+.header {
+   &__text {
+      [ @extend %text; ]
+		color:red; -- це перебє color з шаблона 
+   }
+}
 
 # ====== В jQuery НА ПОДІЯХ І В МЕТОДАХ jQuery ПИШЕМ ТІЛЬКИ [   function () {}  ] ==========
 
@@ -127,3 +151,4 @@ require( 'autoprefixer' )({ remove: false, browsers: this.config.build.autoprefi
 <div class="app app_no_js [zz]"></div>
     <!-- BEMGO:symbols -->
 16.svg icon - можна щоб були н-д в паці index а застосовувати на іншій сторінці
+17.всі стилі в dist/app.css що не входе в н-д:  header START  ***  header END  ==всі вони беруться з placeholder.scss==
