@@ -19,7 +19,17 @@ const handleTabs = () => {
 
 const handleBurgerMenu = () => {
 
-	$(document).on('click', '.burger-menu', function () {
-		$(this).toggleClass('open');
+	// $(document).on('click', '.burger-menu', function () {
+	// 	$('.menu').toggleClass('menu-open');
+	// 	$(this).toggleClass('open')
+	// 	$('body').toggleClass('no-scroll')
+	// });
+
+	// or
+
+	$(document).on('click', '.hamburger__label', function () {
+		$('.menu').toggleClass('menu-open');
+		$('body').toggleClass('no-scroll');
 	});
 };
+
