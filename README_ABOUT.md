@@ -33,6 +33,9 @@ app/
 всі картинки можна зберігати в [ОДНОМУ] місці [develop/app/assets/img]
 шлях тоді до них буде такий  [img src="/static/app/img/faq-info.jpg" alt=""]
 ===========================================
+всі картинки можна зберігати в [ОДНОМУ] місці [develop/app/assets/img]
+шлях тоді до них буде такий  [img src="/static/app/img/faq-info.jpg" alt=""]
+===========================================
 [картинки через background-image мають бути в папці img/sprite]
 app/
 ├── blocks/
@@ -101,7 +104,32 @@ app/
 require( 'autoprefixer' )({ remove: false, browsers: this.config.build.autoprefixer }),
 )]
 
+=== [placeholder.scss [@extend]]() ===
+1.задаєм загальні стилі (шаблон)
 
+%text {
+	font-family: $font-family;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	color: red;
+}
+
+2. в  потрібному файлі приміняєм ці стилі
+
+.header {
+	&__text {
+	[ @extend %text; ]
+	}
+}
+
+3. якщо потрібно щось змінити в шаблоні стилів пишеи потрібне свойство нище	
+.header {
+   &__text {
+      [ @extend %text; ]
+      color:red; -- це перебє color з шаблона
+   }
+}
 
 
 # ====== В jQuery НА ПОДІЯХ І В МЕТОДАХ jQuery ПИШЕМ ТІЛЬКИ [   function () {}  ] ==========
@@ -126,7 +154,7 @@ require( 'autoprefixer' )({ remove: false, browsers: this.config.build.autoprefi
 14. data.json - може бути для кожної сторінки окремо(не обовязково так робити)
 15. import в deps.js - імпортуємо файли в один (н-д app.js)
 16. inject в deps.js - підключаємо на сторінку файли 
-17. 15. function filter в deps.js -  можем підключати файли тільки на ту сторінку яка нам потрібна
+17. function filter в deps.js -  можем підключати файли тільки на ту сторінку яка нам потрібна
 <div class="app app_no_js [zz]"></div>
     <!-- BEMGO:symbols -->
-16.svg icon - можна щоб були н-д в паці index а застосовувати на іншій сторінці
+18.svg icon - можна щоб були н-д в паці index а застосовувати на іншій сторінці
