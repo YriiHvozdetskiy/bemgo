@@ -1,8 +1,11 @@
 @import '../app/variable.scss';
+@import '../app/placeholder.scss';
+
 /* ============================ footer START ================================================================= */
 .footer {
 	p {
-		color: black;
+		@extend %text;
+		//color: black;
 		font-size: 3rem;
 	}
 }

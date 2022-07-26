@@ -3,7 +3,7 @@
 .dropdown {
 	position: relative;
 	.active {
-		color: $accent;
+		color: $accent-color;
 		&:after {
 			background: url("app/blocks/develop/components/img/sprite/arrow-down-active.svg") no-repeat center;
 			background-size: cover;
@@ -71,7 +71,7 @@
 	}
 	&__item {
 		margin: 0;
-		background: $light;
+		background: $light-color;
 		box-sizing: border-box;
 		border-bottom: 0;
 		padding: 1.4rem 2rem;
@@ -89,7 +89,7 @@
 
 		&:hover,
 		&:focus {
-			color: $accent;
+			color: $accent-color;
 		}
 	}
 }

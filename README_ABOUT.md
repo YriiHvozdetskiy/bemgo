@@ -130,4 +130,3 @@ require( 'autoprefixer' )({ remove: false, browsers: this.config.build.autoprefi
 <div class="app app_no_js [zz]"></div>
     <!-- BEMGO:symbols -->
 16.svg icon - можна щоб були н-д в паці index а застосовувати на іншій сторінці
-17.картинки можна зберігати в одному [develop/app/assets/img]
