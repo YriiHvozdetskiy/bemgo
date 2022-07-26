@@ -30,6 +30,9 @@ app/
 вказуєм що тут є картинка
 <img src="@about/about-poster.jpg" alt="">
 ===========================================
+всі картинки можна зберігати в [ОДНОМУ] місці [develop/app/assets/img]
+шлях тоді до них буде такий  [img src="/static/app/img/faq-info.jpg" alt=""]
+===========================================
 [картинки через background-image мають бути в папці img/sprite]
 app/
 ├── blocks/
@@ -127,3 +130,4 @@ require( 'autoprefixer' )({ remove: false, browsers: this.config.build.autoprefi
 <div class="app app_no_js [zz]"></div>
     <!-- BEMGO:symbols -->
 16.svg icon - можна щоб були н-д в паці index а застосовувати на іншій сторінці
+17.картинки можна зберігати в одному [develop/app/assets/img]
