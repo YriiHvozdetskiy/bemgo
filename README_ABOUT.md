@@ -1,6 +1,7 @@
 ======= создати папку з струкрутою =======
 ==================================================
 npm run add header[symbols,assets,.scss,.html]
+npm run add header[.scss,.html]
 ==================================================
 #npm run add "назва папки"[.scss,.html]
 npm run add header[.scss,.html]
