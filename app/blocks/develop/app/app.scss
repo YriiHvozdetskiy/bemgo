@@ -56,6 +56,8 @@ button {
 	cursor: pointer;
 	color: inherit;
 	background-color: inherit;
+	//прибрати синє миготіння в хромі при кліку
+	-webkit-tap-highlight-color: transparent;
 }
 picture {
 	display: block;
@@ -68,6 +70,8 @@ a {
 	cursor: pointer;
 	display: inline-block;
 	color: inherit;
+	//прибрати синє миготіння в хромі при кліку
+	-webkit-tap-highlight-color: transparent;
 }
 a:link,
 a:visited {
