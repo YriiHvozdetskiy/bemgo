@@ -7,6 +7,7 @@ $(document).ready(function () {
 
 $(window).on('load', function () {
 	console.log('load');
+	animation()
 });
 
 // ========= стилі написання JS функцій (обгортаємо все в функцію) ============
@@ -32,4 +33,3 @@ const handleBurgerMenu = () => {
 		$('body').toggleClass('no-scroll');
 	});
 };
-
