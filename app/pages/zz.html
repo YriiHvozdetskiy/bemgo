@@ -12,6 +12,12 @@
 	<meta name="format-detection" content="telephone=no"/>
 	<meta name="format-detection" content="address=no"/>
 	<title>zz-page</title>
+	<!--ці файли підключаються з папки app/blocks/develop/app/assets-->
+	<!--<link rel="stylesheet" href="./styles/normalize.css">-->
+	<!--<link rel="stylesheet" href="./styles/swiper.min.css">-->
+	<link rel="stylesheet" href="./styles/fancybox.css">
+	<!--<link rel="stylesheet" href="./styles/jquery-ui.min.css">-->
+
 	<!-- BEMGO:styles -->
 	<!-- BEMGO:favicons -->
 </head>
@@ -21,25 +27,6 @@
 	@@include( 'develop/header/header.html', {
 	"slogan": "Фільтр"
 	})
-	<!-- Slider main container -->
-	<div class="swiper">
-		<!-- Additional required wrapper -->
-		<div class="swiper-wrapper">
-			<!-- Slides -->
-			<div class="swiper-slide">Slide 1</div>
-			<div class="swiper-slide">Slide 2</div>
-			<div class="swiper-slide">Slide 3</div>
-		</div>
-		<!-- If we need pagination -->
-		<div class="swiper-pagination"></div>
-
-		<!-- If we need navigation buttons -->
-		<div class="swiper-button-prev"></div>
-		<div class="swiper-button-next"></div>
-
-		<!-- If we need scrollbar -->
-		<div class="swiper-scrollbar"></div>
-	</div>
 	<main class="main">
 		@@include( 'develop/zz/zz.html' )
 		<div class="app__layout">

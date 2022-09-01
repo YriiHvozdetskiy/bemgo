@@ -135,6 +135,23 @@ require( 'autoprefixer' )({ remove: false, browsers: this.config.build.autoprefi
    }
 }
 
+===========================================
+=== [підключення файлів]() ===
+1. <!DOCTYPE html>
+ці файли підключаються з папки app/blocks/develop/app/assets окремо якщо потрібно щоб були НАД [link rel="stylesheet" href="./styles/app.css"]
+<head>
+	<link rel="stylesheet" href="./styles/normalize.css">
+	<link rel="stylesheet" href="./styles/swiper.min.css">
+	<link rel="stylesheet" href="./styles/fancybox.css">
+	<link rel="stylesheet" href="./styles/jquery-ui.min.css">
+</head>
+2. deps.js 
+в deps.js якщо розкоментувати такий спосіб підключення файли в <head></head> підключаться ПІД  [link rel="stylesheet" href="./styles/app.css"]
+	{
+		from: 'app/blocks/develop/app/plugins/fancybox',
+		inject: ['fancybox.css'],
+	},
+===========================================
 
 # ====== В jQuery НА ПОДІЯХ І В МЕТОДАХ jQuery ПИШЕМ ТІЛЬКИ [   function () {}  ] ==========
 
