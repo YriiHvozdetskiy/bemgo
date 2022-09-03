@@ -30,6 +30,12 @@ app/
 вказуєм що тут є картинка
 <img src="@about/about-poster.jpg" alt="">
 ===========================================
+всі картинки можна зберігати в [ОДНОМУ] місці [develop/app/assets/img]
+шлях тоді до них буде такий  [img src="/static/app/img/faq-info.jpg" alt=""]
+===========================================
+всі картинки можна зберігати в [ОДНОМУ] місці [develop/app/assets/img]
+шлях тоді до них буде такий  [img src="/static/app/img/faq-info.jpg" alt=""]
+===========================================
 [картинки через background-image мають бути в папці img/sprite]
 app/
 ├── blocks/
@@ -64,13 +70,17 @@ app/
 1.[видаляєм] весь fill з svg
 2.колір задаєм через: [fill: green;]
 3.<svg [width="9" height="7" viewBox="0 0 9 7"]  - розміри для svg іконок залишаєм/видаляєм щою при зменшені html font-size  пропорції залишались [деколи допомагає]
-4. змінити fill буває чомусь можливо тільки через id svg (#index__favorite path {fill: $accent-color;})
-	======= [@@include]() =======
-	==index.html
-	@@include( 'develop/header/header.html', {
-	"slogan": "Фільтр"
-	})
-	==header.html
+4. змінити fill буває чомусь можливо тільки через id svg (#index__favorite path {fill: $accent;})
+=========================================
+всі svg можна зберігати в [ОДНОМУ] місці [develop/app/symbols]
+шлях тоді до них буде такий  [<use xlink:href="#app__time"></use>]
+
+====== [@@include]() =======
+   ==index.html
+   @@include( 'develop/header/header.html', {
+   "slogan": "Фільтр"
+   })
+   ==header.html
 <h1>@@slogan</h1>
 
 ===========================================
@@ -109,21 +119,39 @@ require( 'autoprefixer' )({ remove: false, browsers: this.config.build.autoprefi
 	color: red;
 }
 
-2. в  потрібному файлі приміняєм ці стилі 
+2. в  потрібному файлі приміняєм ці стилі
 
 .header {
-   &__text {
- 	   [ @extend %text; ]
-   }	
+	&__text {
+	[ @extend %text; ]
+	}
 }
 
-3. якщо потрібно щось змінити в шаблоні стилів пишеи потрібне свойство нище
+3. якщо потрібно щось змінити в шаблоні стилів пишеи потрібне свойство нище	
 .header {
    &__text {
       [ @extend %text; ]
-		color:red; -- це перебє color з шаблона 
+      color:red; -- це перебє color з шаблона
    }
 }
+
+===========================================
+=== [підключення файлів]() ===
+1. <!DOCTYPE html>
+ці файли підключаються з папки app/blocks/develop/app/assets окремо якщо потрібно щоб були НАД [link rel="stylesheet" href="./styles/app.css"]
+<head>
+	<link rel="stylesheet" href="./styles/normalize.css">
+	<link rel="stylesheet" href="./styles/swiper.min.css">
+	<link rel="stylesheet" href="./styles/fancybox.css">
+	<link rel="stylesheet" href="./styles/jquery-ui.min.css">
+</head>
+2. deps.js 
+в deps.js якщо розкоментувати такий спосіб підключення файли в <head></head> підключаться ПІД  [link rel="stylesheet" href="./styles/app.css"]
+	{
+		from: 'app/blocks/develop/app/plugins/fancybox',
+		inject: ['fancybox.css'],
+	},
+===========================================
 
 # ====== В jQuery НА ПОДІЯХ І В МЕТОДАХ jQuery ПИШЕМ ТІЛЬКИ [   function () {}  ] ==========
 
@@ -147,8 +175,7 @@ require( 'autoprefixer' )({ remove: false, browsers: this.config.build.autoprefi
 14. data.json - може бути для кожної сторінки окремо(не обовязково так робити)
 15. import в deps.js - імпортуємо файли в один (н-д app.js)
 16. inject в deps.js - підключаємо на сторінку файли 
-17. 15. function filter в deps.js -  можем підключати файли тільки на ту сторінку яка нам потрібна
+17. function filter в deps.js -  можем підключати файли тільки на ту сторінку яка нам потрібна
 <div class="app app_no_js [zz]"></div>
     <!-- BEMGO:symbols -->
-16.svg icon - можна щоб були н-д в паці index а застосовувати на іншій сторінці
-17.всі стилі в dist/app.css що не входе в н-д:  header START  ***  header END  ==всі вони беруться з placeholder.scss==
+18.svg icon - можна щоб були н-д в паці index а застосовувати на іншій сторінці

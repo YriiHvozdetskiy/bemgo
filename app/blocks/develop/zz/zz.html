@@ -1,8 +1,13 @@
 <!--щоб gulp бачив файл потрібно задати клас тикий як і в папки "zz"-->
 <section class="hero">
 	<h2 class="hero__title">hero</h2>
+	<button type="button" data-fancybox data-src="#test"><strong>fancybox</strong></button>
 	<section class="zz test">
 		<h1 class="test__title">test</h1>
+
+		@@include( 'develop/components/select-dropdown/select-dropdown.html')
+
+
 		@@include( 'develop/components/button/button.html', {
 		"title": "вход в Личный кабинет",
 		"mod": "test__button",
@@ -28,9 +33,28 @@
 		})
 
 	</section>
+	@@include( 'develop/sections/error/error.html')
 	<picture class="hero__picture">
 		<img src="@zz/item_3.jpg" alt="">
 	</picture>
+	<!-- Slider main container -->
+	<div class="test swiper">
+		<!-- Additional required wrapper -->
+		<div class="test__wrapper swiper-wrapper">
+			<!-- Slides -->
+			<div class="test__slide swiper-slide">Slide 1</div>
+			<div class="test__slide swiper-slide">Slide 2</div>
+			<div class="test__slide swiper-slide">Slide 3</div>
+		</div>
+		<!-- If we need pagination -->
+		<div class="test__pagination swiper-pagination"></div>
+
+		<!-- If we need navigation buttons -->
+		<div class="test__button-prev swiper-button-prev"></div>
+		<div class="test__button-next swiper-button-next"></div>
+
+		<!-- If we need scrollbar -->
+		<div class="test__scrollbar swiper-scrollbar"></div>
 	<picture class="hero__img">
 		<img src="@zz/blog-info-1.jpg" alt="">
 	</picture>
@@ -38,8 +62,6 @@
 	<div class="hero__img-2"></div>
 	<!--	буде в dist/styles/img/sprite_zz_call.svg [npm run start]-->
 	<!--	буде в dist/styles/img/symbol.svg [npm run do]
-	з ВП не поміняти???
-	 (один спрайт на всі svg)
 	в dist\zz.html -- в фінальній збірці через [npm run do] буде виличерзний спрайт з всіх сторінок
 	 -->
 	<svg class="hero__icon">
@@ -50,6 +72,9 @@
 	</svg>
 	<svg class="test__icon">
 		<use xlink:href="#zz__service-icon-1"></use>
+	</svg>
+	<svg>
+		<use xlink:href="#app__time"></use>
 	</svg>
 	<ul class="projects__list individual-projects">
 		@@for (var i = 0; i < global.jsons.index.items.length; i++) {

@@ -1,33 +1,38 @@
 @import '../../app/variable.scss';
+@import '../../app/fonts.scss';
+
 .breadcrumbs {
+	padding-top: 2rem;
 	& > * {
 		display: flex;
 		align-items: center;
 		& > * {
 			position: relative;
 			&:not(:last-child) {
-				margin-right: 1rem;
-				&:hover,
-				&:focus {
-					& > * {
-						color: yellow;
-					}
-				}
+				margin-right: 1.5rem;
 				&::after {
 					content: "/";
 					position: absolute;
 					top: 50%;
-					right: -0.6rem;
+					right: -0.8rem;
 					transform: translate(0, -50%);
-					color: green;
+					color: $primary-text-color;
 					transition: color .25s $time-distribution-function;
+				}
+				& > * {
+					font-size: 1.4rem;
+					line-height: 1.6rem;
+					color: #8395A7;
+					transition: color .25s $time-distribution-function;
+					&:hover{
+						color: $accent;
+					}
 				}
 			}
 			& > * {
-				font-weight: 500;
-				font-size: 1.2rem;
-				line-height: 1.5rem;
-				color: yellow;
+				font-size: 1.4rem;
+				line-height: 1.6rem;
+				color: #C8D6E5;
 				transition: color .25s $time-distribution-function;
 			}
 		}

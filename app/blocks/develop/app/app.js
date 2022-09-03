@@ -32,4 +32,3 @@ const handleBurgerMenu = () => {
 		$('body').toggleClass('no-scroll');
 	});
 };
-
