@@ -1,39 +1,8 @@
 <!--щоб gulp бачив файл потрібно задати клас тикий як і в папки "zz"-->
+@@include( 'develop/sections/error/error.html')
 <section class="hero">
 	<h2 class="hero__title">hero</h2>
 	<button type="button" data-fancybox data-src="#test"><strong>fancybox</strong></button>
-	<section class="zz test">
-		<h1 class="test__title">test</h1>
-
-		@@include( 'develop/components/select-dropdown/select-dropdown.html')
-
-
-		@@include( 'develop/components/button/button.html', {
-		"title": "вход в Личный кабинет",
-		"mod": "test__button",
-		"isButton": "button",
-		"href": "login.html",
-		"type": "button",
-		"img": "@zz/time.svg",
-		"alt": "",
-		"dataName":"",
-		"dataValue":""
-		})
-		@@include( 'develop/components/input/input.html', {
-		"type": "number",
-		"mod": "test__wrapper",
-		"isDate": "",
-		"isSelect": "",
-		"hasInformation": "",
-		"confirmNumber": "",
-		"confirmSMS": "",
-		"placeholder": "+3(9XX) XXX - XX - XX",
-		"name": "tel",
-		"label": "Номер мобильного"
-		})
-
-	</section>
-	@@include( 'develop/sections/error/error.html')
 	<picture class="hero__picture">
 		<img src="@zz/item_3.jpg" alt="">
 	</picture>
@@ -87,6 +56,38 @@
 		}
 	</ul>
 </section>
+<section class="zz test">
+	<h1 class="test__title">test</h1>
+
+	@@include( 'develop/components/select-dropdown/select-dropdown.html')
+
+
+	@@include( 'develop/components/button/button.html', {
+	"title": "вход в Личный кабинет",
+	"mod": "test__button",
+	"isButton": "button",
+	"href": "login.html",
+	"type": "button",
+	"img": "@zz/time.svg",
+	"alt": "",
+	"dataName":"",
+	"dataValue":""
+	})
+	@@include( 'develop/components/input/input.html', {
+	"type": "number",
+	"mod": "test__wrapper",
+	"isDate": "",
+	"isSelect": "",
+	"hasInformation": "",
+	"confirmNumber": "",
+	"confirmSMS": "",
+	"placeholder": "+3(9XX) XXX - XX - XX",
+	"name": "tel",
+	"label": "Номер мобильного"
+	})
+
+</section>
+
 @@include( 'develop/zz/service-hero/service-hero.html')
 @@include( 'develop/zz/service-quantum/service-quantum.html')
 

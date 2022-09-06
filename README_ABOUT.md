@@ -179,3 +179,10 @@ require( 'autoprefixer' )({ remove: false, browsers: this.config.build.autoprefi
 <div class="app app_no_js [zz]"></div>
     <!-- BEMGO:symbols -->
 18.svg icon - можна щоб були н-д в паці index а застосовувати на іншій сторінці
+19. bemgo-yarn/app/blocks/develop/app/assets -- всі файли з розширенням [.js,.css] можна підключити окремим файлом
+(создати окремий файл для окремої сторінки і підключити його) н-д:
+див pages/zz.html [npm run do] - не працює
+<link rel="stylesheet" href="./styles/fancybox.css">
+<script src="./scripts/validate_script.js"></script>
+
+
