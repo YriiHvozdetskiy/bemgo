@@ -184,5 +184,6 @@ require( 'autoprefixer' )({ remove: false, browsers: this.config.build.autoprefi
 див pages/zz.html [npm run do] - не працює
 <link rel="stylesheet" href="./styles/fancybox.css">
 <script src="./scripts/validate_script.js"></script>
+20. js файли в папці сторінки - підключаються окремо до кожної сторінки [npm run do] (в файлі dist/scripts/zz.js буде весь код з app.js + app/blocks/develop/zz/zz.js)
 
 

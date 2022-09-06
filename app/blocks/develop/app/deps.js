@@ -29,7 +29,7 @@ module.exports = {
 		// 	import: ['fancybox.css'],
 		// }
 		{
-			from: 'app/blocks/develop/app',
+			from: 'app/blocks/develop/app/assets',
 			inject: ['jquery-3.6.0.min.js'],
 		},
 		{
