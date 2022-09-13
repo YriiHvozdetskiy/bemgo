@@ -107,6 +107,7 @@ app/
 [plugins.push(
 require( 'autoprefixer' )({ remove: false, browsers: this.config.build.autoprefixer }),
 )]
+===========================================
 
 === [placeholder.scss [@extend]]() ===
 1.задаєм загальні стилі (шаблон)
@@ -151,6 +152,19 @@ require( 'autoprefixer' )({ remove: false, browsers: this.config.build.autoprefi
 		from: 'app/blocks/develop/app/plugins/fancybox',
 		inject: ['fancybox.css'],
 	},
+===========================================
+
+=== [dynamic_adapt динамічний адаптив]() ===
+
+[якщо одночасно перекидувати пару елементів в один і той же блок може виникнути плутанина]
+
+<div data-da=".block,1024,2"
+
+div -- блок який переміщаєм
+.block -- куда переміщаєм
+1024 -- коли переміщаєм(@media)
+2 -- позиція на яку переміщаєм в середину вказаного блока, якщо не вказувати переміститься в КІНЕЦЬ (елемент буде 3-тій)
+
 ===========================================
 
 # ====== В jQuery НА ПОДІЯХ І В МЕТОДАХ jQuery ПИШЕМ ТІЛЬКИ [   function () {}  ] ==========

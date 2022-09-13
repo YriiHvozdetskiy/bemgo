@@ -73,6 +73,9 @@ module.exports = {
 			import: ['refs.js'],
 		},
 		{
+			import: ['dynamic_adapt.js'],
+		},
+		{
 			import: ['validate_script.js'],
 		},
 		{
