@@ -173,31 +173,31 @@ div -- блок який переміщаєм
 
 
 
-1.розмітка і стилі на сторінці можна розбити по [section] див. zz/service-hero,zz/service-quantum
-2.картинки до цієї секції мають бути в корневій папці [zz/assets/img.jpg, symbols]
-3.якщо потрібні стилі з якоїсь папки[button,input] -- @import "service-quantum/service-quantum.scss";
-4.шрифти дублюємо в app/blocks/develop/app/[static/fonts] -- щоб працювало в [npm run do]
-5.з конопки можна робити силку, вибитати type="button"
-6.картинки оптимізуються в режимі продакшн [npm run do],оптимізуються ті картинки які вставлені в HTML(png,jpg,svg)
-7.модифікатор до кнопки button пишем в scss кнопки н-д: "mod": "button_accent" (див в index.html)
+1. розмітка і стилі на сторінці можна розбити по [section] див. zz/service-hero,zz/service-quantum
+2. картинки до цієї секції мають бути в корневій папці [zz/assets/img.jpg, symbols]
+3. якщо потрібні стилі з якоїсь папки[button,input] -- @import "service-quantum/service-quantum.scss";
+4. шрифти дублюємо в app/blocks/develop/app/[static/fonts] -- щоб працювало в [npm run do]
+5. з конопки можна робити силку, вибитати type="button"
+6. картинки оптимізуються в режимі продакшн [npm run do],оптимізуються ті картинки які вставлені в HTML(png,jpg,svg)
+7.
 8.коміти в scss не удаляються
 9.в файлі svg картинкам/іконки видаляти fill/stroke які задають колір і задавати колір через css
 10. назву обєктів в data.json пишем камелКейсом(careersInfoItem)
 11. в jquery вішаєм обробник подій так:$(document).on('click', '.dropdown__list', (e) =>{}, через refs.dropDownList -- не працює
 12. $(e.target) -- e.target для jquery
-13. список можна робити через цикл @for
+13. список можна робити через цикл [@for]
 14. data.json - може бути для кожної сторінки окремо(не обовязково так робити)
-15. import в deps.js - імпортуємо файли в один (н-д app.js)
-16. inject в deps.js - підключаємо на сторінку файли 
-17. function filter в deps.js -  можем підключати файли тільки на ту сторінку яка нам потрібна
+15. [import] в deps.js - імпортуємо файли в один (н-д app.js)
+16. [inject] в deps.js - підключаємо на сторінку файли 
+17. [function filter в deps.js] -  можем підключати файли тільки на ту сторінку яка нам потрібна
 <div class="app app_no_js [zz]"></div>
     <!-- BEMGO:symbols -->
-18.svg icon - можна щоб були н-д в паці index а застосовувати на іншій сторінці
+18. svg icon - можна щоб були н-д в паці index а застосовувати на іншій сторінці
 19. bemgo-yarn/app/blocks/develop/app/assets -- всі файли з розширенням [.js,.css] можна підключити окремим файлом
 (создати окремий файл для окремої сторінки і підключити його) н-д:
 див pages/zz.html [npm run do] - не працює
 <link rel="stylesheet" href="./styles/fancybox.css">
 <script src="./scripts/validate_script.js"></script>
-20. js файли в папці сторінки - підключаються окремо до кожної сторінки [npm run do] (в файлі dist/scripts/zz.js буде весь код з app.js + app/blocks/develop/zz/zz.js)
+20.js файли в папці сторінки - підключаються окремо до кожної сторінки [npm run do] (в файлі dist/scripts/zz.js буде весь код з app.js + app/blocks/develop/zz/zz.js)
 
 
