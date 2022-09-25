@@ -1,20 +1,3 @@
-
-plugins/advanced-custom-fields-pro/
-plugins/akismet
-plugins/classic-editor
-plugins/cyr2lat
-plugins/duplicate-page
-plugins/elfsight-instagram-feed-cc
-plugins/polylang
-plugins/seo-by-rank-math
-plugins/svg-support
-plugins/elfsight-instagram-feed-cc
-plugins/regenerate-thumbnails
-plugins/regenerate-thumbnails.zip
-plugins/simple-custom-post-order
-plugins/wp-smushit
-
-.idea
 # Diff
 Thumbs.db
 Desktop.ini

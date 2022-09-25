@@ -58,6 +58,12 @@
 	}
 }
 
+//ховер працює тільки тоді коли hero__title знаходиться в блоку з класом .hero
+//погано підтримується
+:is(.hero) .hero__title:hover{
+ 	color: red;
+}
+
 .individual-projects {
 	display: flex;
 	flex-wrap: wrap;
