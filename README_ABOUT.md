@@ -199,5 +199,6 @@ div -- блок який переміщаєм
 <link rel="stylesheet" href="./styles/fancybox.css">
 <script src="./scripts/validate_script.js"></script>
 20.js файли в папці сторінки - підключаються окремо до кожної сторінки [npm run do] (в файлі dist/scripts/zz.js буде весь код з app.js + app/blocks/develop/zz/zz.js)
+21.// .hero__title - ці коміти (ECSSTractor) не дод в dist/app.css
 
 
