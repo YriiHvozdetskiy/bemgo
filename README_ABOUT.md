@@ -201,6 +201,7 @@ div -- блок який переміщаєм
 20.js файли в папці сторінки - підключаються окремо до кожної сторінки [npm run do] (в файлі dist/scripts/zz.js буде весь код з app.js + app/blocks/develop/zz/zz.js)
 21.// .hero__title - ці коміти (ECSSTractor) не дод в dist/app.css
 22. background-image -- підключаються ТІЛЬКИ з папки  develop\zz\img\sprite\item_2.jpg -- З ПАПКИ СТОРІНКИ
+23. якщо потрібно підключити js бібліотеки асинхроно то тільки через CDN
 
 
 

@@ -15,6 +15,35 @@ module.exports = {
 		// 	from: 'node_modules/@fancyapps/ui/dist',// подключим fancybox из node_modules, буде на всіх сторінках в всіх css файлах і в ФІНАЛЬНІЙ збірці теж (npm run do)
 		// 	import: ['fancybox.css'],
 		// }
+		// якщо потрібно підключити js бібліотеки асинхроно то через CDN
+		// {
+		// 	from: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/',
+		// 	inject: ['jquery.min.js'],
+		// },
+		// //  ===== swiper =====
+		// {
+		// 	from: 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/',
+		// 	inject: ['swiper-bundle.min.js','swiper-bundle.min.css'],
+		// },
+		// //  ===== fancybox =====
+		// {
+		// 	from: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/',
+		// 	inject: ['jquery.fancybox.min.js','jquery.fancybox.min.css'],
+		// },
+		// //  ===== jqueryui =====
+		// {
+		// 	from: 'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/',
+		// 	inject: ['jquery-ui.min.js'],
+		// },
+		// {
+		// 	from: 'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/',
+		// 	inject: ['jquery-ui.min.css'],
+		// },
+		// //  ===== jquery-validate =====
+		// {
+		// 	from: 'https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/',
+		// 	inject: ['jquery.validate.min.js'],
+		// },
 		{
 			from: 'app/blocks/develop/app/assets',
 			inject: ['jquery-3.6.0.min.js'],
