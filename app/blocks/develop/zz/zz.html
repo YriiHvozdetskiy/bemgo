@@ -1,32 +1,22 @@
 <!--щоб gulp бачив файл потрібно задати клас тикий як і в папки "zz"-->
 @@include( 'develop/sections/error/error.html')
 <div current-count="7" class="div"></div>
-<section class="hero">
+<section class="zz hero">
 	<h2 class="hero__title">hero</h2>
 	<button type="button" data-fancybox data-src="#test"><strong>fancybox</strong></button>
 	<picture class="hero__picture">
-		<img src="@zz/item_3.jpg" alt="">
+
+		<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+		<!--картинка в форматі .jpg видає помилку при [npm run do] -- але вроді сторінка потом "працює" -->
+		<!--<img src="@zz/item.jpg" alt="">-->
+		<!--картинка в форматі .jpg видає помилку при [npm run do] -- але вроді сторінка потом "працює" -->
+
+		<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
 	</picture>
-	<!-- Slider main container -->
-	<div class="test swiper">
-		<!-- Additional required wrapper -->
-		<div class="test__wrapper swiper-wrapper">
-			<!-- Slides -->
-			<div class="test__slide swiper-slide">Slide 1</div>
-			<div class="test__slide swiper-slide">Slide 2</div>
-			<div class="test__slide swiper-slide">Slide 3</div>
-		</div>
-		<!-- If we need pagination -->
-		<div class="test__pagination swiper-pagination"></div>
-
-		<!-- If we need navigation buttons -->
-		<div class="test__button-prev swiper-button-prev"></div>
-		<div class="test__button-next swiper-button-next"></div>
-
-		<!-- If we need scrollbar -->
-		<div class="test__scrollbar swiper-scrollbar"></div>
 	<picture class="hero__img">
-		<img src="@zz/blog-info-1.jpg" alt="">
+		<!--<img src="@zz/blog-info-1.jpg" alt="">-->
 	</picture>
 	<div class="hero__img"></div>
 	<div class="hero__img-2"></div>
