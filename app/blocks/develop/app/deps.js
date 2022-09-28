@@ -56,10 +56,10 @@ module.exports = {
 			from: 'app/blocks/develop/app/plugins/fancybox',
 			inject: ['jquery.fancybox.min.js','fancybox.css'],
 		},
-		{
-			from: 'app/blocks/develop/app/plugins/jquery-ui',
-			inject: ['jquery-ui.min.js', 'jquery-ui.min.css'],
-		},
+		// {
+		// 	from: 'app/blocks/develop/app/plugins/jquery-ui',
+		// 	inject: ['jquery-ui.min.js', 'jquery-ui.min.css'],
+		// },
 		{
 			from: 'app/blocks/develop/app/plugins/validate',
 			inject: ['jquery.validate.min.js'],
