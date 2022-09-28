@@ -80,7 +80,7 @@ module.exports = function ( code, page, task ) {
 
 		style = style.replace( '[href]', href.replace( pattern, '' ) + ( isExternal( href ) ? '' : version ) )
 		
-		if ( arrays.styles.indexOf( style ) === -1 ) arrays.styles.push( style )
+		if ( arrays.styles.indexOf( style ) === -1 ) arrays.styles.unshift( style )
 	})
 
 
