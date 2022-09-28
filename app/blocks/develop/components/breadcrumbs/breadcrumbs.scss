@@ -1,5 +1,4 @@
 @import '../../app/variable.scss';
-@import '../../app/fonts.scss';
 
 .breadcrumbs {
 	padding-top: 2rem;
@@ -25,7 +24,7 @@
 					color: #8395A7;
 					transition: color .25s $time-distribution-function;
 					&:hover{
-						color: $accent;
+						color: $accent-color-hover;
 					}
 				}
 			}
