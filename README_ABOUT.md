@@ -35,7 +35,8 @@ app/
 ===========================================
 [картинки через background-image мають бути в папці img/sprite] -- якщо будем прописувати [npm run do] картинки через background НЕ ПІДКЛЮЧАТЬСЯ
 !!!!! background-image -- підключаються ТІЛЬКИ з папки  develop\zz\img\sprite\item_2.jpg -- З ПАПКИ СТОРІНКИ
-в .scss файлах в папках [section, components] background: url -- НЕ ПІДКЛЮЧАЄТЬСЯ!!!!
+в .scss файлах в папках [section, components] background: url -- НЕ ПІДКЛЮЧАЄТЬСЯ!!!! при [npm run do]
+==== можна прописати стилі з "папки сторінки"  див zz.scss => .dropdown ====
 app/
 ├── blocks/
 │   └── develop/         # Уровень develop
@@ -200,7 +201,8 @@ div -- блок який переміщаєм
 <script src="./scripts/validate_script.js"></script>
 20.js файли в папці сторінки - підключаються окремо до кожної сторінки [npm run do] (в файлі dist/scripts/zz.js буде весь код з app.js + app/blocks/develop/zz/zz.js)
 21.// .hero__title - ці коміти (ECSSTractor) не дод в dist/app.css
-22. background-image -- підключаються ТІЛЬКИ з папки  develop\zz\img\sprite\item_2.jpg -- З ПАПКИ СТОРІНКИ
+22. background-image -- підключаються ТІЛЬКИ з папки  develop\zz\img\sprite\item_2.jpg -- З ПАПКИ СТОРІНКИ тому що при [npm run do] не підключаться
+==== можна прописати стилі з "папки сторінки"  див zz.scss => .dropdown ====
 23. якщо потрібно підключити js бібліотеки асинхроно то тільки через CDN
 
 
