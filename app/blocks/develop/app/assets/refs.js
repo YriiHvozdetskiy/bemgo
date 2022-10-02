@@ -6,4 +6,7 @@ const refs = {
 	dropDownItems: $('.dropdown__item'),
 	dropDownInput: $('.dropdown__input-hidden'),
 }
+
+Object.freeze(refs);
+
 /* ============================ refs END ================================================================= */
