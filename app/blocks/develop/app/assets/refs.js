@@ -1,12 +1,11 @@
 "use strict";
 /* ============================ refs START ================================================================= */
-const refs = {
+const refs = Object.freeze({
 	dropDownList: $('.dropdown__list'),
 	dropDownBtn: $('.dropdown__button'),
 	dropDownItems: $('.dropdown__item'),
 	dropDownInput: $('.dropdown__input-hidden'),
-}
-
-Object.freeze(refs);
+	footer:$('footer')
+})
 
 /* ============================ refs END ================================================================= */
