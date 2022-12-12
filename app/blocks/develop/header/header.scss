@@ -9,13 +9,16 @@
 		justify-content: space-between;
 	}
 	&__logo {
+		& > * {
+			width: 32rem;
+			height: 6rem;
+		}
 		@media screen and (min-width: 667px) {
 			margin-right: 1rem;
 		}
 	}
 	&__icon {
-		width: 32rem;
-		height: 6rem;
+
 	}
 	&__text {
 		@extend %text;
@@ -122,6 +125,9 @@
 	}
 }
 //or
+
+//є баг коли перезагружаєм сторінку значок бургеру не змінюється
+//томущо інпут залишається чекед
 input[type="checkbox"]#hamburger-toggle {
 	position: absolute;
 	width: 1px;

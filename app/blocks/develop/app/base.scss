@@ -51,6 +51,9 @@ button {
 	background-color: inherit;
 	//прибрати синє миготіння в хромі при кліку
 	-webkit-tap-highlight-color: transparent;
+	&:disabled {
+		cursor: auto;
+	}
 }
 picture {
 	display: block;

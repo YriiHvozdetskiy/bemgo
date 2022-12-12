@@ -12,6 +12,8 @@ $(document).on('click', '.dropdown__list', function (e) {
 	refs.dropDownBtn.text(textElem)
 	refs.dropDownInput.val(dataValueElem)
 	refs.dropDownList.toggleClass('dropdown__list_visible')
+
+	searchElDropdown();
 })
 
 // приховує з списку мову яку вибрали
@@ -22,6 +24,7 @@ const searchElDropdown = () => {
 		const ths = this
 		const valueEl = ths.textContent.toUpperCase()
 		if (valueEl === valueBtn) ths.classList.add('hidden')
+		if (valueEl !== valueBtn) ths.classList.remove('hidden')
 	})
 }
 
