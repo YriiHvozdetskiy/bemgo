@@ -48,6 +48,18 @@ module.exports = {
 			from: 'app/blocks/develop/app/assets',
 			inject: ['jquery-3.6.0.min.js'],
 		},
+		// {
+		//    from: 'https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/',
+		//    inject: ['lodash.min.js'],
+		// },
+		// {
+		//    from: 'app/blocks/develop/app/assets',
+		//    inject: ['lodash.js'],
+		// },
+		// {
+		//    from: 'app/blocks/develop/app/assets',
+		//    inject: ['lodash_debounce.js'],
+		// },
 		{
 			from: 'app/blocks/develop/app/plugins/swiper',
 			inject: ['swiper.min.js', 'swiper.min.css'],
