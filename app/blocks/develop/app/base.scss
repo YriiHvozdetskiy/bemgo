@@ -1,50 +1,14 @@
 @import "variable.scss";
 
+// як вираховувати font-size(768): 768 * 10 / 1440(там де 10px) = 5.33
 html {
    font-size: 10px;
 }
-@media screen and (min-width: 667px) {
+@media screen and (min-width: 768px) {
    html {
       font-size: 5.3px;
    }
 }
-@media screen and (min-width: 768px) {
-   html {
-      font-size: 7.1px;
-   }
-}
-@media screen and (min-width: 1024px) {
-   html {
-      font-size: 8.9px;
-   }
-}
-@media screen and (min-width: 1366px) {
-   html {
-      font-size: 9.5px;
-   }
-}
-@media screen and (min-width: 1440px) {
-   html {
-      font-size: 10px;
-   }
-}
-@media screen and (min-width: 1680px) {
-   html {
-      font-size: 11.7px;
-   }
-}
-@media screen and (min-width: 1920px) {
-   html {
-      font-size: 13.3px;
-   }
-}
-
-@media screen and (min-width: 2560px) {
-   html {
-      font-size: 17.8px;
-   }
-}
-
 * {
    padding: 0;
    margin: 0;
