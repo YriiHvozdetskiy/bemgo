@@ -97,7 +97,7 @@ module.exports = {
 	},
 
 	sass () {
-		return require( 'gulp-sass' )({
+		return require( 'gulp-sass' )(require('sass'))({
 			importer: require( this.paths.core( 'sassResolver' ) )
 		})
 	},
