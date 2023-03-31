@@ -151,7 +151,7 @@ module.exports = {
 
 			require( 'autoprefixer' )({
 				remove: false,
-				browsers: this.config.build.autoprefixer
+            overrideBrowserslist: this.config.build.autoprefixer
 			}),
 
 		)
