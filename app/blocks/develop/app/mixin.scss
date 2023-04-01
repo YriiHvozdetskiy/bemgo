@@ -11,8 +11,11 @@
    }
 }
 
-@mixin wordSize($size, $height:1.2rem, $weight:400) {
-   font-size: $size;
+@mixin wordSize($size, $height, $weight:400) {
+   font-size: $size + rem;
    font-weight: $weight;
-   line-height: $height;
+   line-height: $height + rem;
 }
+
+// Cmd + B
+//@include wordSize(12, 1.5, 700)
