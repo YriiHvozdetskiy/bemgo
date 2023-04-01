@@ -1,58 +1,63 @@
+// як вираховувати font-size(768): 768 * 10 / 1440(там де 10px) = 5.33px
+// і на найблищому @media до 1440 font-size:10px н-д:
+//  @media screen and (min-width: 1440px) {
+//      font-size: 10px;
+//   }
 html {
    font-size: 10px;
    @media screen and (min-width: 667px) {
-      font-size: 4.63px;
+      font-size: calc(6670px / var(--viewport-width));
    }
    @media screen and (min-width: 768px) {
-      font-size: 5.3px;
+      font-size: calc(7680px / var(--viewport-width));
    }
    @media screen and (min-width: 992px) {
-      font-size: 6.9px;
+      font-size: calc(9920px / var(--viewport-width));
    }
    @media screen and (min-width: 1024px) {
-      font-size: 7.1px;
+      font-size: calc(10240px / var(--viewport-width));
    }
    @media screen and (min-width: 1168px) {
-      font-size: 8.1px;
+      font-size: calc(11680px / var(--viewport-width));
    }
    @media screen and (min-width: 1280px) {
-      font-size: 8.9px;
+      font-size: calc(12800px / var(--viewport-width));
    }
    @media screen and (min-width: 1312px) {
-      font-size: 9.1px;
+      font-size: calc(13120px / var(--viewport-width));
    }
    @media screen and (min-width: 1366px) {
-      font-size: 9.5px;
+      font-size: calc(13660px / var(--viewport-width));
    }
    @media screen and (min-width: 1440px) {
       font-size: 10px;
    }
    @media screen and (min-width: 1496px) {
-      font-size: 10.4px;
+      font-size: calc(14960px / var(--viewport-width));
    }
    @media screen and (min-width: 1536px) {
-      font-size: 10.7px;
+      font-size: calc(15360px / var(--viewport-width));
    }
    @media screen and (min-width: 1600px) {
-      font-size: 11.1px;
+      font-size: calc(16000px / var(--viewport-width));
    }
    @media screen and (min-width: 1680px) {
-      font-size: 11.7px;
+      font-size: calc(16800px / var(--viewport-width));
    }
    @media screen and (min-width: 1700px) {
-      font-size: 11.8px;
+      font-size: calc(17000px / var(--viewport-width));
    }
    @media screen and (min-width: 1728px) {
-      font-size: 12px;
+      font-size: calc(17280px / var(--viewport-width));
    }
    @media screen and (min-width: 1920px) {
-      font-size: 13.3px;
+      font-size: calc(19200px / var(--viewport-width));
    }
    @media screen and (min-width: 2056px) {
-      font-size: 14.3px;
+      font-size: calc(20560px / var(--viewport-width));
    }
    @media screen and (min-width: 2560px) {
-      font-size: 17.8px;
+      font-size: calc(25600px / var(--viewport-width));
    }
 }
 
