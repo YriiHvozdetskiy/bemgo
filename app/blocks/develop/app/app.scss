@@ -1,28 +1,49 @@
-@import "variable.scss";
 @import 'base.scss';
 @import 'common.scss';
+@import 'mixin.scss';
 
-@mixin font-face($style-name, $file:$style-name, $weight:normal, $style:normal) {
-	$filepath: "/static/fonts/" + $file;
-	@font-face {
-		font-family: quote($style-name);
-		src: url($filepath + ".woff") format('woff'),
-			//url($filepath + ".woff2") format('woff2'),
-		url($filepath + ".ttf") format('truetype');
-		font-weight: $weight;
-		font-style: $style;
-		font-display: swap;
-	}
+:root {
+   --primary-text-color: #6B7280;
+   --light-color: #ffffff;
+   --dark-color: #000000;
+   --accent-color: #3730A3;
+   --accent-color-hover: #E28B00;
+   --title-color: #1F2937;
+   --secondary-color: #718093;
+   --hamburger-color: #000;
+   --burger-color: #000;
+
+   --time-distribution-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+   //розмір контейнера 1760px +30px для падінгів = 1790px
+   --container-width: 179rem;
+
+   --family_Montserrat: 'Montserrat';
+   --family_Raleway: 'Raleway';
+   --family_Roboto: 'Roboto';
+
+   --font-family: --family_Montserrat;
 }
 
-@include font-face($family_Montserrat, 'Montserrat-Bold', 700, normal);
-@include font-face($family_Montserrat, 'Montserrat-Light', 300, normal);
-@include font-face($family_Montserrat, 'Montserrat-Medium', 500, normal);
-@include font-face($family_Montserrat, 'Montserrat-Italic', 400, italic);
-@include font-face($family_Montserrat, 'Montserrat-Regular', 400, normal);
+@include font-face(var(--family_Montserrat), 'Montserrat-Bold', 700, normal);
+@include font-face(var(--family_Montserrat), 'Montserrat-Light', 300, normal);
+@include font-face(var(--family_Montserrat), 'Montserrat-Medium', 500, normal);
+@include font-face(var(--family_Montserrat), 'Montserrat-Italic', 400, italic);
+@include font-face(var(--family_Montserrat), 'Montserrat-Regular', 400, normal);
 
-@include font-face($family_Roboto, 'Roboto-Regular', 400, normal);
+@include font-face(var(--family_Roboto), 'Roboto-Regular', 400, normal);
 
-@include font-face($family_Raleway, 'Raleway-Regular', 400, normal);
-@include font-face($family_Raleway, 'Raleway-Bold', 700, normal);
+@include font-face(var(--family_Raleway), 'Raleway-Regular', 400, normal);
+@include font-face(var(--family_Raleway), 'Raleway-Bold', 700, normal);
 
+//мапи (словники)
+
+/*$colors: (
+   'primary': #8e3329,
+   'accent': #d98328,
+   'secondary': #5a1321,
+   'foreground': #191919,
+   'background': #e9e9e9,
+);*/
+
+//color: map-get($colors, 'accent');

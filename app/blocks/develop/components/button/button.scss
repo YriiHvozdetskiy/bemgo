@@ -1,26 +1,25 @@
-@import '../../app/variable.scss';
 // щоб стилі кнопки примінялись імпортуємо в scss файл стилі кнопки[@import "../components/button/button.scss";]
 .button {
-	min-width: 17rem;
-	border: none;
-	padding: 2.2rem 2.6rem;
-	& > * {
-		font-weight: 500;
-		font-size: 1.6rem;
-		line-height: 2.9rem;
-		color: $dark-color;
-	}
+   min-width: 17rem;
+   border: none;
+   padding: 2.2rem 2.6rem;
+   & > * {
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 2.9rem;
+      color: var(--dark-color);
+   }
 }
 
 .link {
-	min-width: 17rem;
-	padding: 2.2rem 2.6rem;
-	& > * {
-		font-weight: 500;
-		font-size: 1.6rem;
-		line-height: 2.9rem;
-		color: $dark-color;
-	}
+   min-width: 17rem;
+   padding: 2.2rem 2.6rem;
+   & > * {
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 2.9rem;
+      color: var(--dark-color);
+   }
 }
 //@@include( 'develop/components/button/button.html', {
 //"title": "вход в Личный кабинет",

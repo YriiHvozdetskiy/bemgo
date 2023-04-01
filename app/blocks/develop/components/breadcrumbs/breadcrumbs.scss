@@ -1,5 +1,3 @@
-@import '../../app/variable.scss';
-
 .breadcrumbs {
 	padding-top: 2rem;
 	& > * {
@@ -15,16 +13,16 @@
 					top: 50%;
 					right: -0.8rem;
 					transform: translate(0, -50%);
-					color: $primary-text-color;
-					transition: color .25s $time-distribution-function;
+					color: var(--primary-text-color);
+					transition: color .25s var(--time-distribution-function);
 				}
 				& > * {
 					font-size: 1.4rem;
 					line-height: 1.6rem;
 					color: #8395A7;
-					transition: color .25s $time-distribution-function;
+					transition: color .25s var(--time-distribution-function);
 					&:hover{
-						color: $accent-color-hover;
+						color: var(--accent-color-hover);
 					}
 				}
 			}
@@ -32,7 +30,7 @@
 				font-size: 1.4rem;
 				line-height: 1.6rem;
 				color: #C8D6E5;
-				transition: color .25s $time-distribution-function;
+				transition: color .25s var(--time-distribution-function);
 			}
 		}
 	}
