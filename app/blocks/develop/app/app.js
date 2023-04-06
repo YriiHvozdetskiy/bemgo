@@ -1,17 +1,17 @@
-$(document).ready(function () {
+$(document).ready(function() {
    console.log('ready');
-   handleTabs();
-   handleBurgerMenu();
+   handleTabs()
+   handleBurgerMenu()
 });
 
-$(window).on('load', function () {
-   console.log('load');
-});
+$(window).on('load', function() {
+   console.log('load')
+})
 
 // ========= стилі написання JS функцій (обгортаємо все в функцію) ============
 
 const handleTabs = () => {
-   $(document).on('click', '.look__tabs', function () {
+   $(document).on('click', '.look__tabs', function() {
       // щось робем
    });
 };
@@ -26,22 +26,24 @@ const handleBurgerMenu = () => {
 
    // or
 
-   $(document).on('click', '.hamburger__label', function () {
-      $('.menu').toggleClass('menu-open');
+   $(document).on('click', '.hamburger__label', function() {
+      $('.menu')
+         .toggleClass('menu-open')
+         .css()
       $('body').toggleClass('no-scroll');
    });
 };
 
-function debounceHandler () {
+function debounceHandler() {
    let searchTimeout;
 
    $(document).on('input', '==name-class==', onChangeSearch);
 
-   function onChangeSearch () {
+   function onChangeSearch() {
       clearTimeout(searchTimeout);
-      searchTimeout = setTimeout(function () {
-         console.log('search');
-      }, 500);
+      searchTimeout = setTimeout(function() {
+         console.log('search')
+      }, 500)
    }
 }
 

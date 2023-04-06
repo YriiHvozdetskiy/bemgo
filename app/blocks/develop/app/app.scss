@@ -23,29 +23,15 @@
    --family_Montserrat: 'Montserrat';
    --family_Raleway: 'Raleway';
    --family_Roboto: 'Roboto';
-
-   --font-family: --family_Montserrat;
 }
 
-@include font-face(var(--family_Montserrat), 'Montserrat-Bold', 700, normal);
-@include font-face(var(--family_Montserrat), 'Montserrat-Light', 300, normal);
-@include font-face(var(--family_Montserrat), 'Montserrat-Medium', 500, normal);
-@include font-face(var(--family_Montserrat), 'Montserrat-Italic', 400, italic);
-@include font-face(var(--family_Montserrat), 'Montserrat-Regular', 400, normal);
+@include font-face('Montserrat', 'Montserrat-Bold', 700, normal);
+@include font-face('Montserrat', 'Montserrat-Light', 300, normal);
+@include font-face('Montserrat', 'Montserrat-Medium', 500, normal);
+@include font-face('Montserrat', 'Montserrat-Italic', 400, italic);
+@include font-face('Montserrat', 'Montserrat-Regular', 400, normal);
 
-@include font-face(var(--family_Roboto), 'Roboto-Regular', 400, normal);
+@include font-face('Roboto', 'Roboto-Regular', 400, normal);
 
-@include font-face(var(--family_Raleway), 'Raleway-Regular', 400, normal);
-@include font-face(var(--family_Raleway), 'Raleway-Bold', 700, normal);
-
-//мапи (словники)
-
-/*$colors: (
-   'primary': #8e3329,
-   'accent': #d98328,
-   'secondary': #5a1321,
-   'foreground': #191919,
-   'background': #e9e9e9,
-);*/
-
-//color: map-get($colors, 'accent');
+@include font-face('Raleway', 'Raleway-Regular', 400, normal);
+@include font-face('Raleway', 'Raleway-Bold', 700, normal);
