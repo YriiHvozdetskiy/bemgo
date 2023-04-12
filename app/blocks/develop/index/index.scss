@@ -3,13 +3,13 @@
 
 /* ============================ hero START ================================================================= */
 .hero {
-	&__title {
-		color: #E28B00;
-	}
+   &__title {
+      color: #E28B00;
+   }
 }
 
-.swiper-button-next::after, .swiper-button-prev::after{
-	font-size: 1rem;
+.swiper-button-next::after, .swiper-button-prev::after {
+   font-size: 1rem;
 }
 
 /* ============================ hero END ================================================================= */
