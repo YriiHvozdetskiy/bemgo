@@ -1,17 +1,17 @@
-$(document).ready(function() {
+$(document).ready(function () {
    console.log('ready');
    handleTabs()
    handleBurgerMenu()
 });
 
-$(window).on('load', function() {
+$(window).on('load', function () {
    console.log('load')
 })
 
 // ========= стилі написання JS функцій (обгортаємо все в функцію) ============
 
 const handleTabs = () => {
-   $(document).on('click', '.look__tabs', function() {
+   $(document).on('click', '.look__tabs', function () {
       // щось робем
    });
 };
@@ -26,7 +26,7 @@ const handleBurgerMenu = () => {
 
    // or
 
-   $(document).on('click', '.hamburger__label', function() {
+   $(document).on('click', '.hamburger__label', function () {
       $('.menu')
          .toggleClass('menu-open')
          .css()
@@ -41,9 +41,9 @@ function debounceHandler() {
 
    function onChangeSearch() {
       clearTimeout(searchTimeout);
-      searchTimeout = setTimeout(function() {
+
+      searchTimeout = setTimeout(function () {
          console.log('search')
       }, 500)
    }
 }
-

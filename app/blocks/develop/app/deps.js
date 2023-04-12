@@ -20,10 +20,10 @@ module.exports = {
 
       // =================== CDN ===================
 
-       //   ===== jquery =====
+      //   ===== jquery =====
       {
-      	from: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/',
-      	inject: ['jquery.min.js'],
+         from: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/',
+         inject: ['jquery.min.js'],
       },
       //    ===== swiper =====
       // {
@@ -33,8 +33,8 @@ module.exports = {
 
       //    ===== fancybox =====
       // {
-      // 	from: 'https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.15/fancybox/',
-      // 	inject: ['fancybox.umd.js','fancybox.min.css'],
+      //    from: 'https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.15/fancybox/',
+      //    inject: ['fancybox.umd.js', 'fancybox.min.css'],
       // },
 
       //    ===== jquery-validate =====
@@ -96,20 +96,31 @@ module.exports = {
       //можем підключати в загаліний файл окремі файли з кодом для select_dropdown наприклад чи слайдера (всі ці файли будуть в одному app.js)
       {
          //from: 'app/blocks/develop/app', - якщо немає, то пошук буде йти з app/blocks/develop/app/assets
+         // файли будуть підклбчені в dist/scripts/app.js  в тій послідовності які знаходяться в масиві
          import: ['refs.js'],
       },
-      {
-         import: ['dynamic_adapt.js'],
-      },
-      {
-         import: ['validate_script.js'],
-      },
-      {
-         import: ['select_dropdown.js'],
-      },
-      {
-         import: ['sliders.js'],
-      },
+      // 'dynamic_adapt.js'
+      // 'validate_script.js'
+      // 'select_dropdown.js'
+      // 'fancybox.js'
+
+      // альтернатива підключення
+
+      // {
+      //    import: ['dynamic_adapt.js'],
+      // },
+      // {
+      //    import: ['validate_script.js'],
+      // },
+      // {
+      //    import: ['select_dropdown.js'],
+      // },
+      // {
+      //    import: ['sliders.js'],
+      // },
+      // {
+      //    import: ['fancybox.js'],
+      // },
    ],
 
 };
