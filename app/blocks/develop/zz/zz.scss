@@ -15,11 +15,18 @@
 .test {
    &__title {
       color: red;
+      font-family: var(--family_Open_Sans);
+      font-size: 8rem;
       @include wordSize(12, 2.3, 600)
    }
 }
 
 .hero {
+   &__title{
+      font-family: var(--family_Open_Sans);
+      font-size: 10rem;
+      font-weight: 500;
+   }
    &__img {
       width: 15rem;
       height: 15rem;
