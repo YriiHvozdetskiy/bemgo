@@ -99,10 +99,12 @@ module.exports = {
          // файли будуть підклбчені в dist/scripts/app.js  в тій послідовності які знаходяться в масиві
          import: ['refs.js'],
       },
+      // 'sliders.js'
       // 'dynamic_adapt.js'
       // 'validate_script.js'
       // 'select_dropdown.js'
       // 'fancybox.js'
+      // 'validate_script.js'
 
       // альтернатива підключення
 

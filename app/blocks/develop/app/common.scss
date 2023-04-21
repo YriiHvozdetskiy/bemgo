@@ -7,11 +7,13 @@ body {
       overscroll-behavior: none;
    }
 }
+
 .app {
    display: flex;
    flex-direction: column;
    min-height: 100%;
 }
+
 .visually-hidden {
    position: absolute;
    width: 1px;
@@ -22,12 +24,18 @@ body {
    clip: rect(0 0 0 0);
    overflow: hidden;
 }
+
 .main {
    flex: 1 1 auto;
 }
+
 .container {
    max-width: var(--container-width);
    width: 100%;
    margin: 0 auto;
    padding: 0 1.5rem;
+}
+
+svg {
+   display: inline-block;
 }

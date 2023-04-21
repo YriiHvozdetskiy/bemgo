@@ -2,6 +2,7 @@ $(document).ready(function () {
    console.log('ready');
    handleTabs()
    handleBurgerMenu()
+   searchElDropdown() // hide the selected value in the select-dropdown list
 });
 
 $(window).on('load', function () {
@@ -29,7 +30,6 @@ const handleBurgerMenu = () => {
    $(document).on('click', '.hamburger__label', function () {
       $('.menu')
          .toggleClass('menu-open')
-         .css()
       $('body').toggleClass('no-scroll');
    });
 };
