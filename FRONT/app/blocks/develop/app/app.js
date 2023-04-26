@@ -2,18 +2,16 @@ $(document).ready(function () {
    console.log('ready');
    handleTabs()
    handleBurgerMenu()
-   searchElDropdown() // hide the selected value in the select-dropdown list
+   // searchElDropdown() // hide the selected value in the select-dropdown list
 });
 
 $(window).on('load', function () {
    console.log('load')
 })
 
-// ========= стилі написання JS функцій (обгортаємо все в функцію) ============
-
 const handleTabs = () => {
    $(document).on('click', '.look__tabs', function () {
-      // щось робем
+      // doing something
    });
 };
 
