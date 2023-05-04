@@ -1,17 +1,16 @@
 /* ============================ sliders.js START ================================================================= */
 const slider = new Swiper('.swiper', {
    // Default parameters
-   //к-сть слайдів яку показує
+   //the number of slides it shows
    slidesPerView: 1,
-   //відключення ф-лу якщо слайдів менше чим потрібно
+   //turning off if there are fewer slides than needed
    watchOverflow: true,
-   //відступи між слайдами
+   //indents between slides
    spaceBetween: 10,
-   //швидкість показу слайдів
+   //slide show speed
    speed: 300,
-   //к-сть прокручуюмих слайдів
+   //number of scrollable slides
    slidesPerGroup: 1,
-   //безкінечний слайдер(по кругу)
    loop: true,
    // Responsive breakpoints
    breakpoints: {
@@ -33,17 +32,17 @@ const slider = new Swiper('.swiper', {
    },
    // Navigation arrows
    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper__button-next',
+      prevEl: '.swiper__button-prev',
    },
 
-   // And if we need scrollbar(полоска внизу)
+   // And if we need scrollbar
    scrollbar: {
-      el: '.swiper-scrollbar',
+      el: '.swiper__scrollbar',
       draggable: true,
    },
    pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper__pagination',
       type: 'bullets',
       clickable: true,
       dynamicBullets: true,
@@ -56,29 +55,28 @@ const slider = new Swiper('.swiper', {
          </div>`,
    },
    autoplay: {
-      //швидкість перемикання
+      //switching speed
       delay: 5000,
-      //закінчити на останьому слайді
+      //end on the last slide
       stopOnLastSlide: true,
-      //відключити після ручного перемикання
+      //disable after manual switching
       disableOnInteraction: false,
    },
-   //затримка для певного слайду на n-сек
    <!-- hold this slide for 2 seconds -->
    // <div class="swiper-slide" data-swiper-autoplay="2000">
    keyboard: {
       enabled: true,
       onlyInViewport: false,
    },
-   //доступність
+   //accessibility
    a11y: {
-      //включити/виключити
+      //turn on/turn off
       enabled: true,
-      //повідомлення
+      //message
       prevSlideMessage: 'Previous slide',
       nextSlideMessage: 'Next slide',
-      firstSlideMessage: 'це перший слайдер',
-      lastSlideMessage: 'це останій слайдер',
+      firstSlideMessage: 'this is the first slider',
+      lastSlideMessage: 'this is the last slider',
       paginationBulletMessage: 'Go to slide {{index}}',
       notificationClass: 'swiper-notification',
    },

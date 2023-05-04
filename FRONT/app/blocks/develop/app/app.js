@@ -9,13 +9,13 @@ $(window).on('load', function () {
    console.log('load')
 })
 
-const handleTabs = () => {
+function handleTabs() {
    $(document).on('click', '.look__tabs', function () {
       // doing something
    });
-};
+}
 
-const handleBurgerMenu = () => {
+function handleBurgerMenu() {
 
    // $(document).on('click', '.burger-menu', function () {
    // 	$('.menu').toggleClass('menu-open');
@@ -30,7 +30,7 @@ const handleBurgerMenu = () => {
          .toggleClass('menu-open')
       $('body').toggleClass('no-scroll');
    });
-};
+}
 
 function debounceHandler() {
    let searchTimeout;
