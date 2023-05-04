@@ -1,4 +1,4 @@
-/* ============================ select_dropdown.js START ================================================================= */
+/* ============================ selectDropdown.js START ================================================================= */
 $(document).on('click', '.dropdown__button', function() {
    refs.dropDownList.toggleClass('dropdown__list_visible')
    refs.dropDownBtn.toggleClass('active')
@@ -50,7 +50,7 @@ $(document).on('click', function(e) {
       refs.dropDownBtn.removeClass('active')
    }
 });
-/* ============================ select_dropdown.js END ================================================================= */
+/* ============================ selectDropdown.js END ================================================================= */
 
 
 

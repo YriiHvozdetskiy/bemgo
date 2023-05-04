@@ -69,7 +69,7 @@ module.exports = {
       // },
       // {
       //    from: 'app/blocks/develop/app/assets',
-      //    inject: ['lodash_debounce.js'],
+      //    inject: ['lodashDebounce.js'],
       // },
       // {
       //    from: 'app/blocks/develop/app/plugins/swiper',
@@ -100,22 +100,22 @@ module.exports = {
          import: ['refs.js'],
       },
       // 'sliders.js'
-      // 'dynamic_adapt.js'
-      // 'validate_script.js'
-      // 'select_dropdown.js'
+      // 'dynamicAdapt.js'
+      // 'validate.js'
+      // 'selectDropdown.js'
       // 'fancybox.js'
-      // 'validate_script.js'
+      // 'validate.js'
 
       // альтернатива підключення
 
       // {
-      //    import: ['dynamic_adapt.js'],
+      //    import: ['dynamicAdapt.js'],
       // },
       // {
-      //    import: ['validate_script.js'],
+      //    import: ['validate.js'],
       // },
       // {
-      //    import: ['select_dropdown.js'],
+      //    import: ['selectDropdown.js'],
       // },
       // {
       //    import: ['sliders.js'],
