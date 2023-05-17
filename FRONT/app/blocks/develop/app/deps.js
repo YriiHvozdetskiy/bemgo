@@ -27,8 +27,8 @@ module.exports = {
       },
       //    ===== swiper =====
       // {
-      // 	from: 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.0/',
-      // 	inject: ['swiper-bundle.min.js','swiper-bundle.min.css'],
+      //    from: 'https://cdn.jsdelivr.net/npm/swiper@9/',
+      //    inject: ['swiper-bundle.min.js', 'swiper-bundle.min.css'],
       // },
 
       //    ===== fancybox =====
