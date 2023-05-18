@@ -1,5 +1,3 @@
-//шаблон класів для елементів з однаковими чи сходжими стилями
-
 /* ============================ styles from placeholder START ================================================================= */
 %text {
    font-family: var(--font-family);
@@ -7,12 +5,17 @@
    font-size: 2.6rem;
    line-height: 1.19;
    color: green;
-   //для тексту .header__text > p
+   //for the text .header__text > p
    & > * {
       color: red;
       border: solid 1px tomato;
    }
 }
+//Extra small (xs)
+//Small (sm)
+//Medium (md)
+//Large (lg)
+//Extra large (xl)
 
 // Cmd + B
 //@extend %text;
