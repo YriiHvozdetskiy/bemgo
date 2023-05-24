@@ -90,6 +90,14 @@ function validationCallForm(form) {
 
    let thisForm = $(form);
    let formSur = thisForm.serialize();
+
+   // if need to send file
+
+   // let thisForm = $(form);
+   // const formAction = thisForm.attr('class');
+   // const formData = new FormData(form);
+   // formData.append('action', formAction);
+
    $.ajax({
       url: thisForm.attr('action'),
       data: formSur,
