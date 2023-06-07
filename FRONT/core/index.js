@@ -13,6 +13,7 @@ const { isFile, isDirectory } = require( './is' )
 // Paths
 
 const root = path.resolve( __dirname, '..' )
+// const rootWP = path.resolve( __dirname, '../../themes/yacht' )
 
 const paths = {
 
@@ -59,6 +60,7 @@ const paths = {
 	_core: __dirname,
 	_tasks: path.join( root, 'tasks' ),
 	_dist: path.join( root, 'dist' ),
+	// _dist: path.join( rootWP, 'dist' ),
 	_app: path.join( root, 'app' ),
 	_blocks: path.join( root, 'app', 'blocks' ),
 	_pages: path.join( root, 'app', 'pages' ),
