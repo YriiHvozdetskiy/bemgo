@@ -97,16 +97,16 @@
 
 // !!!!!!!!!!!!!!!!! при [npm run do] background - писати з файла який в "папці сторінки" !!!!!!!!!!!!!!!!
 
-//.dropdown{
-//	.active {
-//		&:after {
-//			background: url("img/sprite/arrow-down-active.svg") no-repeat center;
-//		}
-//	}
-//	&__button{
-//		&:after{
-//			background: url("img/sprite/arrow-down.svg") no-repeat center;
-//		}
-//	}
-//}
+.dropdown{
+	.active {
+		&:after {
+			background: url("img/sprite/arrow-down-active.svg") no-repeat center;
+		}
+	}
+	&__button{
+		&:after{
+			background: url("img/sprite/arrow-down.svg") no-repeat center;
+		}
+	}
+}
 /* ============================ zz END ================================================================= */
