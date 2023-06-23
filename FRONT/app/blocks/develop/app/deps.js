@@ -31,11 +31,23 @@ module.exports = {
       //    inject: ['swiper-bundle.min.js', 'swiper-bundle.min.css'],
       // },
 
-      //    ===== fancybox =====
+      //    ===== fancybox v3.5.7=====
+      {
+         from: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/',
+         inject: ['jquery.fancybox.min.js', 'jquery.fancybox.min.css'],
+      },
+
+      //    ===== Fancybox UI v5=====
+      //    url:https://fancyapps.com/fancybox/
       // {
       //    from: 'https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.15/fancybox/',
       //    inject: ['fancybox.umd.js', 'fancybox.min.css'],
       // },
+      // <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.19/fancybox/fancybox.umd.js"
+      //         integrity="sha512-pNE1z7qc25DcfLqSEIjqhtd2r2V5asx07lJZn8ZDCy7sBEmVgUWiDwdTvvhplJnaVDwQSL0V6TWdSsqz+7ALYg=="
+      //         crossOrigin="anonymous"
+      //         referrerpolicy="no-referrer">
+      // </script>
 
       //    ===== jquery-validate =====
       // {

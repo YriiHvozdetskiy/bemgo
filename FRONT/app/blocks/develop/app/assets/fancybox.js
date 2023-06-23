@@ -1,5 +1,5 @@
 /* ============================ fancybox START ================================================================= */
-// initialization
+// // initialization  Fancybox UI v5
 Fancybox.bind("[data-fancybox]", {
    // Your custom options
 });
