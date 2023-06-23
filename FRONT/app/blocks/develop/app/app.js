@@ -1,3 +1,26 @@
+// TODO прибрати після розробки !!!!!!
+// document.body.contentEditable = true;
+
+// let blurred = false;
+// let initialWindowHeight = window.innerHeight;
+//
+// window.onblur = function () {
+//    blurred = true;
+// };
+//
+// window.onresize = function () {
+//    if (window.innerHeight !== initialWindowHeight) {
+//       blurred = false;
+//    }
+// };
+//
+// window.onfocus = function () {
+//    console.log('onfocus')
+//    if (blurred) {
+//       window.location.reload();
+//    }
+//    blurred = false;
+// };
 $(document).ready(function () {
    console.log('ready');
    handleTabs()

@@ -1,17 +1,11 @@
-@import '../app/placeholder.scss';
+@import "../app/placeholder.scss";
 //@import "../components/select-dropdown/select-dropdown.scss"; щоб були видні стилі
 
 /* ============================ main-start START ================================================================= */
 .main-start {
    &__title {
-      color: #E28B00;
+      color: #e28b00;
    }
 }
 
-.swiper-button-next::after, .swiper-button-prev::after {
-   font-size: 1rem;
-}
-
 /* ============================ main-start END ================================================================= */
-
-
