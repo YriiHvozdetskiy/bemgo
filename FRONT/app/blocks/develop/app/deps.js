@@ -32,10 +32,10 @@ module.exports = {
       // },
 
       //    ===== fancybox v3.5.7=====
-      {
-         from: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/',
-         inject: ['jquery.fancybox.min.js', 'jquery.fancybox.min.css'],
-      },
+      // {
+      //    from: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/',
+      //    inject: ['jquery.fancybox.min.js', 'jquery.fancybox.min.css'],
+      // },
 
       //    ===== Fancybox UI v5=====
       //    url:https://fancyapps.com/fancybox/
