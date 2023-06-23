@@ -21,6 +21,7 @@
 //    }
 //    blurred = false;
 // };
+
 $(document).ready(function () {
    console.log('ready');
    handleTabs()
