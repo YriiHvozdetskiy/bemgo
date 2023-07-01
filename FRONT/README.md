@@ -20,3 +20,5 @@ module.exports = {
 ====================
 
 uncomment line: 16,63 and comment line 62 in FRONT/core/index.js 
+
+tailwind watch: npx tailwindcss -i app/blocks/develop/app/assets/styles.css -o dist/styles/styles.css --watch
