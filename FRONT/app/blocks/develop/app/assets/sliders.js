@@ -68,6 +68,14 @@ const slider = new Swiper('.swiper', {
       enabled: true,
       onlyInViewport: false,
    },
+   // on:{
+   //    init:function (swiper){
+   //       if ((swiper.params.loop && swiper.slides.length === 3) || (!swiper.params.loop && swiper.slides.length === 1)) {
+   //          swiper.disable()
+   //          swiper.destroy()
+   //       }
+   //    }
+   // },
    //accessibility
    a11y: {
       //turn on/turn off

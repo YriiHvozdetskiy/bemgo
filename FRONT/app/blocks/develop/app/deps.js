@@ -31,6 +31,12 @@ module.exports = {
       //    inject: ['swiper-bundle.min.js', 'swiper-bundle.min.css'],
       // },
 
+      // ===== swiper v8.3.2 =====
+      // {
+      //    from: 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/',
+      //    inject: ['swiper-bundle.min.js', 'swiper-bundle.min.css'],
+      // },
+
       //    ===== fancybox v3.5.7=====
       // {
       //    from: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/',
