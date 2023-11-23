@@ -26,6 +26,16 @@
 
    --family_Open_Sans: 'Open Sans';
 
+
+   --primary-font-family: 'Lusitana', serif;
+   --secondary-font-family: 'Lato', sans-serif;
+
+   //@media
+   --sm: 640px;
+   --md: 768px;
+   --lg: 1024px;
+   --xl: 1280px;
+   --2xl: 1536px;
 }
 
 @include font-face('Montserrat', 'Montserrat-Bold', 700, normal);
