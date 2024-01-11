@@ -15,10 +15,9 @@
 
    --time-distribution-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-   //розмір контейнера 1440px +30px для падінгів = 1470px
-   --viewport-width: 1440;
-   //--container-width: calc(var(--viewport-width) + 3rem);
-   --container-width: 147rem;
+   //розмір контейнера 1220px +30px для падінгів = 1250px
+   --viewport-width: 122rem;
+   --container-width: calc(var(--viewport-width) + 3rem); // 125rem
 
    --family_Montserrat: 'Montserrat';
    --family_Raleway: 'Raleway';

@@ -16,7 +16,7 @@ $(document).on('click', '.dropdown__list', function(e) {
    searchElDropdown();
 })
 
-// приховує з списку мову яку вибрали
+// hides the selected language from the list
 const searchElDropdown = () => {
    const valueBtn = refs.dropDownBtn.text().toUpperCase()
 
@@ -28,7 +28,7 @@ const searchElDropdown = () => {
    })
 }
 
-// Нажатие на Escape. Закрыть дропдаун
+// Click on Escape. Close dropdown
 $(document).on('keydown', function(e) {
    if (e.key === 'Escape') {
       refs.dropDownList.removeClass('dropdown__list_visible')
@@ -36,13 +36,8 @@ $(document).on('keydown', function(e) {
    }
 });
 
-// Клик снаружи дропдауна. Закрыть дропдаун
+// Click outside the dropdown. Close dropdown
 $(document).on('click', function(e) {
-   //TODO як переписати це на JQ ?
-   // const target = $(e.target)
-   // console.log('e.target',e.target)
-   // console.log('refs.dropDownBtn',refs.dropDownBtn)
-   // console.log('target',target)
    const dropDownBtn = document.querySelector('.dropdown__button');
 
    if (e.target !== dropDownBtn) {
