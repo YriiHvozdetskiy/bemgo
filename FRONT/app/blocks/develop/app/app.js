@@ -69,3 +69,24 @@ function debounceHandler() {
       }, 500)
    }
 }
+
+function handleForm() {
+   $(document).on('submit', '[data-form]', function (e) {
+      e.preventDefault();
+
+      const thisForm = $(this);
+      const data = new FormData(thisForm[0]);
+
+      $.ajax({
+         url: thisForm.attr('action'),
+         type: "POST",
+         data: data,
+
+         success: function (data) {
+         },
+         error: function (error) {
+            console.log(error)
+         },
+      });
+   })
+}
