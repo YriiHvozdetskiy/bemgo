@@ -1,10 +1,14 @@
 @import "../app/placeholder.scss";
+@import "../app/app.scss";
 //@import "../components/select-dropdown/select-dropdown.scss"; щоб були видні стилі
 
 /* ============================ welcome START ================================================================= */
 .welcome {
    &__title {
       color: #e28b00;
+      font-size: toRem(36);
+      line-height: toRem(44);
+      font-weight: 700;
    }
 }
 
